@@ -21,3 +21,21 @@ DEADLINE 18.12.2024
 ЗАГАЛОМ МАЄМО 4-5 ДНІВ НА РЕАЛІЗАЦІЮ ПРОЕКТУ! 
 
 Успіхів нам! Шановні!
+
+
+
+Yulia Malyarchuk -HEADER
+
+Vitalii Hulimov - HERO
+
+Slava Shyharenko - ADVERTISEMENT	
+
+Mykolai Yalyshko - VEGETABLES
+
+Oleksandr Ahieiev - REWIEWS
+
+Valya Melnyk - YOU ORDER
+
+Ruslan - FOOTER
+
+
