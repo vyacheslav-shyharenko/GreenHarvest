@@ -1,0 +1,34 @@
+/* For mobile */
+.container {
+  max-width: 335px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* For tablet */
+@media only screen and (min-width: 704px) {
+  .container {
+    max-width: 704px;
+    padding: 32px;
+  }
+}
+
+/* For desktop */
+@media only screen and (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+/* For mobile */
+.section-range {
+  padding: 80px;
+}
+
+/* For tablet and more */
+@media only screen and (min-width: 704px) {
+  .section-range {
+    padding: 100px;
+  }
+}

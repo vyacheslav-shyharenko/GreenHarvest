@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter Tight', serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+@media only screen and (min-width: 704px) {
+  body {
+    font-size: 16px;
+  }
+}

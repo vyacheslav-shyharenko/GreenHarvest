@@ -1,0 +1,45 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  width: 100%;
+  background-color: #7a3145;
+  color: #fff;
+  border-radius: 30px;
+  border: transparent;
+  cursor: pointer;
+
+  transition: background-color 350ms ease-in-out;
+}
+
+/* For desktop */
+@media only screen and (min-width: 1080px) {
+  .button:hover {
+    background-color: #d4bfc4;
+    color: #7a3145;
+  }
+}
+
+.button:active {
+  background-color: #fbfbfb;
+}
+
+.icon {
+  fill: #fff;
+}
