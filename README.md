@@ -28,6 +28,8 @@ Yulia Malyarchuk -HEADER
 
 Vitalii Hulimov - HERO
 
+Oleksandr Melnyk - HOW IT WORKS
+
 Slava Shyharenko - ADVERTISEMENT	
 
 Mykolai Yalyshko - VEGETABLES
