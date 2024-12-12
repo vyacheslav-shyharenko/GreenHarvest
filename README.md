@@ -26,6 +26,8 @@ DEADLINE 18.12.2024
 
 Yulia Malyarchuk -HEADER
 
+Oleg Denysenko - MOBILE MENU
+
 Vitalii Hulimov - HERO
 
 Oleksandr Melnyk - HOW IT WORKS
@@ -36,8 +38,12 @@ Mykolai Yalyshko - VEGETABLES
 
 Oleksandr Ahieiev - REWIEWS
 
+Stas -REWIEWS
+
 Valya Melnyk - YOU ORDER
 
 Ruslan - FOOTER
+
+
 
 
