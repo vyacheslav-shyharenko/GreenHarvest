@@ -1,2 +1,116 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+.section-hero {
+  padding: 100px 0px 0px 0px;
+  min-width: 320px;
+  height: 840px;
+  background: #576f35;
+  background-image: url(../img/hero/hero–mobile/img-1-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+@media screen and (min-width: 375px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    padding: 100px 0px 0px 0px;
+    width: 100%;
+    height: 840px;
+    background: #576f35;
+    background-image: url(../img/hero/hero–mobile/img-1-mobile@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 375px;
+  }
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+  min-width: 320px;
+}
+
+.hero-p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+  .section-hero {
+    padding: 120px 0px 0px 0px;
+    width: 100%;
+    height: 1020px;
+    background-image: url(../img/hero/hero–tablet/img-1-tablet.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(../img/hero/hero–tablet/img-1-tablet@2x.jpg);
+      background-repeat: no-repeat;
+      background-size: 768px;
+    }
+  }
+  .hero-title {
+    font-size: 76px;
+    width: 704px;
+    margin-bottom: 24px;
+  }
+  .hero-p {
+    width: 603px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1112px;
+  }
+  .section-hero {
+    width: 100%;
+    height: 796px;
+    background-image: url(../img/hero/hero–desktop/img-1-desktop.jpg);
+    background-position: right;
+    padding-top: 232px;
+  }
+  @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(../img/hero/hero–desktop/img-1-desktop@2x.jpg);
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+  }
+  .hero-title {
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    width: 502px;
+    margin-bottom: 128px;
+  }
+  .hero-p {
+    width: 471px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+  }
+}
