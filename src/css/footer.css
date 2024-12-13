@@ -1,2 +1,21 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+
+.footer {
+  width: 375px;
+  background-color: #7a3145;
+  align-items: center;
+  align-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 4px;
+  /* gap: 72px; */
+}
+
+.footer-core {
+}
+.policy-cookies {
+}
