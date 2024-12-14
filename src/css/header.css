@@ -66,11 +66,11 @@
     }
 }
 .nav {
-    display: flex;
+    display: none;
 }
-@media only screen and (max-width: 1279px) {
+@media only screen and (min-width: 1280px) {
     .nav {
-        display: none;
+            display: flex;
     }
 }
 .nav-list {
