@@ -4,6 +4,8 @@
 .footer {
   background-color: #7a3145;
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-container {
@@ -15,6 +17,7 @@
 }
 
 .footer-core {
+  margin-bottom: 80px;
 }
 
 .wrapper-logo-footer {
@@ -73,7 +76,6 @@
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
-  margin-bottom: 80px;
 }
 /* .address-list {
   display: flex;
@@ -86,19 +88,39 @@
 }
 
 .policy-rights {
+  /* font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4; */
 }
 
 .policy-cookies {
+  display: flex;
+  margin-bottom: 16px;
 }
 .footer-policy-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+  margin-right: 8px;
 }
 .footer-policy-slash {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #d4bfc4;
+  margin-right: 8px;
 }
 .footer-cookies-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
 }
 .footer-rights-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
 }
