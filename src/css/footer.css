@@ -2,16 +2,13 @@
 Базові, загальні стилі вже прописані в окремих файлах. */
 
 .footer {
-  max-width: 375px;
   background-color: #7a3145;
-  padding: 40px 20px;
   margin: 0 auto;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-
   align-items: center;
   align-content: center;
   /* gap: 72px; */
