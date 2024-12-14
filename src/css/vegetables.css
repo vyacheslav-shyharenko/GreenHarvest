@@ -1,2 +1,118 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+img {
+    height: auto;
+}
+
+.vegetables {
+    padding: 80px 0;
+    background-color: #7a3145;
+}
+
+.vegetables_title {
+    max-width: 335px;
+    font-size: 48px;
+    line-height: 1.08333;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;;
+    margin-bottom: 24px;
+}
+
+.vegetables_text {
+    width: 335px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fbfbfb;
+    margin-bottom: 52px;
+}
+
+.vegetables_color {
+    color: #d4bfc4;
+}
+
+.vegetables_list {
+    max-width: 335px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 28px;
+}
+
+.vegetables_item {
+    padding: 32px;
+    border-radius: 40px;
+    height: 376px;
+    background-color: #fbfbfb;
+    width: calc(100% / 1 - 0px);
+}
+
+.vegetables_box {
+    margin-bottom: 8px;
+}
+
+.vegetables_list-text {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7a3145;
+    margin-bottom: 12px;
+}
+.vegetables_list-section {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #141414;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .vegetables {
+        padding: 100px 0;
+
+    }
+
+    .vegetables_title {
+        font-size: 64px;
+    }
+
+    .vegetables_text {
+        width: 626px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #fbfbfb;
+    }
+    
+    .vegetables_list {
+        max-width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .vegetables_item {
+        width: calc(100% / 2 - 13px);
+    }
+    
+}
+
+@media only screen and (min-width: 1280px) {
+    .vegetables {
+        padding: 100px;
+    }
+
+    .vegetables_list {
+        max-width: 1080px;
+    }
+
+    .vegetables_item {
+        width: calc(100% / 3 - 16px);
+    }
+    
+
+}
+
+
