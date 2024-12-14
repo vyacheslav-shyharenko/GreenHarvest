@@ -47,22 +47,22 @@
   margin-bottom: 40px;
 }
 
-.nav {
+.navi-footer {
   margin-bottom: 40px;
 }
 
-.nav-list {
+.navi-list {
   /* display: flex; */
   /* align-items: center; */
   /* gap: 8px; */
   /* margin-right: 20px; */
 }
 
-.nav-item:not(:last-child) {
+.navi-item:not(:last-child) {
   margin-bottom: 14px;
 }
 
-.nav-link {
+.navi-link {
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
