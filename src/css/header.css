@@ -1,2 +1,101 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.header-contaiter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+    .header-contaiter{
+        margin-top: 32px;
+    }
+}
+.wrapper-logo-header{
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+@media only screen and (min-width: 768px) {
+    .wrapper-logo-header{
+        gap: 9px;
+    }
+}
+.logo-header-icon {
+
+}
+@media only screen and (min-width: 768px) {
+    .logo-header-icon{
+        width: 20px;
+        height: 20px;
+    }
+}
+.logo-text-header-icon{
+
+}
+@media only screen and (min-width: 768px) {
+   .logo-text-header-icon{
+        width: 188px;
+        height: 17px;
+    }
+}
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.menu-icon{
+}
+@media only screen and (min-width: 768px) {
+    .menu-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .menu-button{
+        display: none;
+    }
+}
+.nav {
+    display: none;
+}
+@media only screen and (min-width: 1280px) {
+    .nav {
+            display: flex;
+    }
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+}
+
+.nav-item {
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #fbfbfb;
+    padding: 12px;
+}
+.btn-shop-now {
+    width: 158px;
+    color: #fbfbfb;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+}
