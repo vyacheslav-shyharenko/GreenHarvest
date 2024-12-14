@@ -48,16 +48,18 @@
 }
 
 .nav {
+  margin-bottom: 40px;
 }
 
 .nav-list {
   /* display: flex; */
   /* align-items: center; */
-  gap: 8px;
-  margin-right: 20px;
+  /* gap: 8px; */
+  /* margin-right: 20px; */
 }
 
-.nav-item {
+.nav-item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .nav-link {
@@ -69,14 +71,21 @@
   color: #fbfbfb;
 }
 .footer-address {
-}
-.address-list {
-}
-.footer-address-item {
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.43;
   color: #fbfbfb;
+  margin-bottom: 80px;
+}
+/* .address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+} */
+.footer-tel {
+  color: #fbfbfb;
+  margin-bottom: 14px;
 }
 
 .policy-rights {
