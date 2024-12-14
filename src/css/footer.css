@@ -2,43 +2,96 @@
 Базові, загальні стилі вже прописані в окремих файлах. */
 
 .footer {
-  width: 375px;
+  max-width: 375px;
   background-color: #7a3145;
-  align-items: center;
-  align-content: center;
+  padding: 40px 20px;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 4px;
+
+  align-items: center;
+  align-content: center;
   /* gap: 72px; */
 }
 
 .footer-core {
 }
-.logo-footer-icon {
+
+.wrapper-logo-footer {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  margin-bottom: 14px;
 }
+
+.logo-footer-icon {
+  margin-right: 4px;
+}
+
 .icon {
 }
 .logo-text-footer-icon {
 }
+
 .footer-moto {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  margin-bottom: 40px;
 }
+
 .nav {
 }
+
 .nav-list {
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 8px;
+  margin-right: 20px;
 }
+
 .nav-item {
 }
+
 .nav-link {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
 }
 .footer-address {
 }
 .address-list {
 }
-.header-address-item {
+.footer-address-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
+}
+
+.policy-rights {
 }
 
 .policy-cookies {
+}
+.footer-policy-link {
+}
+.footer-policy-slash {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+.footer-cookies-link {
+}
+.footer-rights-link {
 }
