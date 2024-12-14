@@ -1,2 +1,47 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+.container {
+}
+
+.works-wrapper {
+  padding: 40px 20px;
+  width: 375px;
+  height: 532px;
+  background: #7a3145;
+}
+.works-img {
+  width: 335px;
+  height: 452px;
+  background: rgba(20, 20, 20, 0.2), url('path_to_image');
+}
+.works-right-side {
+  padding: 80px 20px;
+  width: 375px;
+  height: 676px;
+  background: #576f35;
+}
+
+.works-subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+.text-accent {
+  color: #d4bfc4;
+}
+.works-desc {
+  margin-bottom: 40px;
+}
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.works-item {
+}
+.works-text {
+}
