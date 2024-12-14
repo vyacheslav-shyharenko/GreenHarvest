@@ -2,10 +2,14 @@
 Базові, загальні стилі вже прописані в окремих файлах. */
 .section-hero {
   padding: 100px 0px 0px 0px;
-  min-width: 320px;
+  min-width: 375px;
   height: 840px;
   background: #576f35;
-  background-image: url(../img/hero/hero–mobile/img-1-mobile.jpg);
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url(../img/hero/hero–mobile/img-1-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -17,7 +21,11 @@
     width: 100%;
     height: 840px;
     background: #576f35;
-    background-image: url(../img/hero/hero–mobile/img-1-mobile@2x.jpg);
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero–mobile/img-1-mobile@2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -33,7 +41,6 @@
   text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 20px;
-  min-width: 320px;
 }
 
 .hero-p {
@@ -51,12 +58,20 @@
     padding: 120px 0px 0px 0px;
     width: 100%;
     height: 1020px;
-    background-image: url(../img/hero/hero–tablet/img-1-tablet.jpg);
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero–tablet/img-1-tablet.jpg);
   }
   @media screen and (min-width: 768px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-hero {
-      background-image: url(../img/hero/hero–tablet/img-1-tablet@2x.jpg);
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(../img/hero/hero–tablet/img-1-tablet@2x.jpg);
       background-repeat: no-repeat;
       background-size: 768px;
     }
@@ -82,14 +97,24 @@
   .section-hero {
     width: 100%;
     height: 796px;
-    background-image: url(../img/hero/hero–desktop/img-1-desktop.jpg);
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../img/hero/hero–desktop/img-1-desktop.jpg);
     background-position: right;
     padding-top: 232px;
   }
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-hero {
-      background-image: url(../img/hero/hero–desktop/img-1-desktop@2x.jpg);
+      background-image: linear-gradient(
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(../img/hero/hero–desktop/img-1-desktop@2x.jpg);
       background-size: contain;
       background-position: right;
       background-repeat: no-repeat;
