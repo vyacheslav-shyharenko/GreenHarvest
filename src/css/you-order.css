@@ -1,27 +1,7 @@
-img {
+img{
   height: auto;
 }
-  
-/* Mobile screen  */
-.container {
-  max-width: 375px;
-  min-width: 320px;
-}
-
-/* Tablet screen */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-/* Desktop screen */
-@media only screen and (min-width: 1112px) {
-  .container {
-    max-width: 1112px;
-  }
-}  
-
-
+ 
 /* Your order  */
 
 .your-order {
@@ -76,11 +56,11 @@ img {
   font-weight: 600;
   font-size: 28px;
   line-height: 1;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   text-transform: uppercase;
   color: #141414;
   margin-bottom: 40px;
-  width: 296px;
+  max-width: 295px;
 }
 
 .os-style-two {
@@ -171,7 +151,7 @@ img {
   padding: 16px 32px;
   width: 295px;
   height: 52px;
-  background: #7a3145;
+  background-color: #7a3145;
   border: none;
   text-align: center;
   font-weight: 600;
@@ -255,7 +235,7 @@ img {
 
   .form-text {
     font-size: 32px;
-    width: 440px;
+    max-width: 440px;
     margin-bottom: 52px;
   }
 
@@ -332,7 +312,7 @@ img {
   }
 
   .form-text {
-    width: 430px;
+    max-width: 428px;
   }
 
   .name-input,
@@ -355,5 +335,4 @@ img {
     background-color: #d4bfc4;
     color: #7a3145;
 }
-
 }

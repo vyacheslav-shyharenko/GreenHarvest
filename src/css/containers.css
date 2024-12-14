@@ -1,4 +1,4 @@
-/* For mobile */
+ /* For mobile */
 .container {
   max-width: 367px;
   min-width: 320px;
@@ -11,14 +11,14 @@
   .container {
     max-width: 736px;
   }
-}
+} 
 
 /* For desktop */
-@media only screen and (min-width: 1280px) {
+ @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1112px;
   }
-}
+}  
 
 /* For mobile */
 .section-range {
@@ -30,4 +30,4 @@
   .section-range {
     padding: 100px 0;
   }
-}
+}  
