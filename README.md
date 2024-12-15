@@ -24,18 +24,26 @@ DEADLINE 18.12.2024
 
 
 
-Yulia Malyarchuk -HEADER
+Yulia Malyarchuk -HEADER     ✓
+
+Oleg Denysenko - MOBILE MENU
 
 Vitalii Hulimov - HERO
 
-Slava Shyharenko - ADVERTISEMENT	
+Oleksandr Melnyk - HOW IT WORKS
+
+Slava Shyharenko - ADVERTISEMENT	  ✓
 
 Mykolai Yalyshko - VEGETABLES
 
 Oleksandr Ahieiev - REWIEWS
 
+Stas -REWIEWS
+
 Valya Melnyk - YOU ORDER
 
-Ruslan - FOOTER
+Ruslan - FOOTER   ✓
+
+
 
 
