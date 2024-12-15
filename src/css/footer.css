@@ -1,2 +1,215 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+
+.footer {
+  background-color: #7a3145;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  /* gap: 72px; */
+}
+
+.footer-core {
+  margin-bottom: 80px;
+}
+
+.wrapper-logo-footer {
+  display: flex;
+  align-items: center;
+  /* font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb; */
+  margin-bottom: 14px;
+}
+
+.logo-footer-icon {
+  margin-right: 4px;
+}
+
+.icon {
+}
+.logo-text-footer-icon {
+}
+
+.footer-logo-moto {
+  margin-bottom: 40px;
+}
+.footer-moto {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+
+.navi-footer {
+  margin-bottom: 40px;
+}
+
+.navi-list {
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 8px; */
+  /* margin-right: 20px; */
+}
+
+.navi-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.navi-link {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+.footer-address {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+}
+/* .address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+} */
+.footer-tel {
+  color: #fbfbfb;
+  margin-bottom: 14px;
+}
+
+.policy-rights {
+}
+
+.policy-cookies {
+  display: flex;
+  margin-bottom: 16px;
+}
+.footer-policy-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+  margin-right: 8px;
+}
+.footer-policy-slash {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+  margin-right: 8px;
+}
+.footer-cookies-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+.footer-rights-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+}
+
+/* -------FOOTER MEDIA------ */
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 0;
+  }
+
+  .container {
+    min-width: 768px;
+  }
+
+  .footer-core {
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footer-logo-moto {
+    max-width: 265px;
+    margin-bottom: 0;
+  }
+
+  .footer-navi-address {
+    margin-left: auto;
+  }
+
+  .logo-footer-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo-text-footer-icon {
+    width: 188px;
+    height: 17px;
+  }
+
+  .footer-moto {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-address {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .policy-rights {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .policy-cookies {
+    margin-bottom: 0;
+  }
+
+  .footer-policy-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-policy-slash {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .footer-cookies-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .footer-rights-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-logo-moto {
+    margin-right: 250px;
+  }
+  .footer-navi-address {
+    display: flex;
+    width: 100%;
+    align-items: top;
+  }
+
+  .footer-address {
+    margin-left: auto;
+  }
+}
