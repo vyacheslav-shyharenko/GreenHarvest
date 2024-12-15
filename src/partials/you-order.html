@@ -1,121 +1,126 @@
+/* Пишемо виключно тільки свою секцію. 
+Базові, загальні стилі вже прописані в окремих файлах. */
+
 <section class="your-order">
-  <div class="container">
-    <h2 class="order-title">
-      Fresh <span class="os-style-one">Harvest</span> Box has got you covered
-    </h2>
-    <p class="order-text">
-      Our boxes are packed with delicious, nutritious vegetables, perfect for
-      anyone looking to eat healthier or support local farmers. Order your box
-      today and start enjoying the best that nature has to offer!
-    </p>
-    <div class="main-order-container">
-      <div class="order-form-container">
-        <p class="form-text">
-          Ordering <span class="os-style-two">from us</span> is quick and easy!
-          Fill out <span class="os-style-three">the form</span> below and we
-          will contact you !
-        </p>
-        <form class="order-form">
-          <div class="intupts-wrapper">
-            <input
-              class="name-input"
-              type="text"
-              name="username"
-              placeholder="Full Name"
-              required
-            />
-            <div class="wrapper-email-input">
+    <div class="container">
+      <h2 class="order-title">
+        Fresh <span class="os-style-one">Harvest</span> Box has got you covered
+      </h2>
+      <p class="order-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+      <div class="main-order-container">
+        <div class="order-form-container">
+          <p class="form-text">
+            Ordering <span class="os-style-two">from us</span> is quick and easy!
+            Fill out <span class="os-style-three">the form</span> below and we
+            will contact you !
+          </p>
+          <form class="order-form">
+            <div class="intupts-wrapper">
               <input
-                class="email-input"
-                type="email"
-                name="email"
-                placeholder="Email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                )
+                class="name-input"
+                type="text"
+                name="username"
+                placeholder="Full Name"
                 required
               />
-              <p class="text-valid">Succes!</p>
-              <p class="text-invalid">Invalid email, try again</p>
+              <div class="wrapper-email-input">
+                <input
+                  class="email-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  )
+                  required
+                />
+                <p class="text-valid">Succes!</p>
+                <p class="text-invalid">Invalid email, try again</p>
+              </div>
+              <textarea
+                class="form-textarea"
+                name="user-comment"
+                placeholder="Comment"
+              ></textarea>
             </div>
-            <textarea
-              class="form-textarea"
-              name="user-comment"
-              placeholder="Comment"
-            ></textarea>
-          </div>
-          <button class="form-button" type="submit">Send</button>
-        </form>
-      </div>
-      <div class="networks-wrapper">
-        <picture class="order-picture">
-          <!-- Desktop -->
-          <source
-            media="(min-width:1112px)"
-            srcset="
-              img/you-order/you-order-desktop/img-desktop.jpg    1x,
-              img/you-order/you-order-desktop/img-desktop@2x.jpg 2x
-            "
-          />
-          <!-- Tablet -->
-          <source
-            media="(min-width:768px)"
-            srcset="
-              img/you-order/you-order-tablet/img-tablet.jpg    1x,
-              img/you-order/you-order-tablet/img-tablet@2x.jpg 2x
-            "
-          />
-          <!-- Mobile -->
-          <source
-            media="(max-width:767px)"
-            srcset="
-              img/you-order/you-order-mobile/img-mobile.jpg    1x,
-              img/you-order/you-order-mobile/img-mobile@2x.jpg 2x
-            "
-          />
-          <img
-            class="order-img"
-            src="../img/you-order/you-order-tablet/img-tablet.jpg"
-            alt="healtyfood"
-            width="536"
-            height="316"
-          />
-        </picture>
-        <p class="networks-text">Follow us on our social networks:</p>
-        <ul class="networks-list">
-          <li class="networks-items">
-            <a
-              class="networks-links"
-              target="_blank"
-              href="https://www.instagram.com/goitclub/"
-              rel="noopener noreferrer"
-              aria-label="Link to Instagram"
-              >Instagram</a
-            >
-          </li>
-          <li><span>/</span></li>
-          <li class="networks-items">
-            <a
-              class="networks-links"
-              target="_blank"
-              href="https://www.facebook.com/goITclub/"
-              rel="noopener noreferrer"
-              aria-label="Link to Facebok"
-              >Facebook</a
-            >
-          </li>
-          <li><span>/</span></li>
-          <li class="networks-items">
-            <a
-              class="networks-links"
-              target="_blank"
-              href="https://www.youtube.com/c/GoIT"
-              rel="noopener noreferrer"
-              aria-label="Link to YouTube"
-              >YouTube</a
-            >
-          </li>
-        </ul>
+            <button class="button" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="networks-wrapper">
+          <picture class="order-picture">
+            <!-- Desktop -->
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                img/you-order/you-order-desktop/img-desktop.jpg 1x,
+                img/you-order/you-order-desktop/img-desktop@2x.jpg 2x
+              "
+            />
+  
+            <!-- Tablet -->
+            <source
+              media="(min-width:768px)"
+              srcset="
+                img/you-order/you-order-tablet/img-tablet.jpg 1x,
+                img/you-order/you-order-tablet/img-tablet@2x.jpg 2x
+              "
+            />
+  
+            <!-- Mobile -->
+            <source
+              media="(max-width:767px)"
+              srcset="
+                img/you-order/you-order-mobile/img-mobile.jpg 1x,
+                img/you-order/you-order-mobile/img-mobile@2x.jpg 2x
+              "
+            />
+            <img
+              class="order-img"
+              src="img/you-order/you-order-tablet/img-tablet.jpg"
+              alt="healtyfood"
+              width="536"
+            />
+          </picture>
+          <p class="networks-text">Follow us on our social networks:</p>
+          <ul class="networks-list">
+            <li class="networks-items">
+              <a
+                class="networks-links"
+                target="_blank"
+                href="https://www.instagram.com/goitclub/"
+                rel="noopener noreferrer"
+                aria-label="Link to Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li><span>/</span></li>
+            <li class="networks-items">
+              <a
+                class="networks-links"
+                target="_blank"
+                href="https://www.facebook.com/goITclub/"
+                rel="noopener noreferrer"
+                aria-label="Link to Facebok"
+                >Facebook</a
+              >
+            </li>
+            <li><span>/</span></li>
+            <li class="networks-items">
+              <a
+                class="networks-links"
+                target="_blank"
+                href="https://www.youtube.com/c/GoIT"
+                rel="noopener noreferrer"
+                aria-label="Link to YouTube"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  
