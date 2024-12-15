@@ -10,6 +10,7 @@
   background: #7a3145;
 }
 .works-img {
+  border-radius: 30px;
   width: 335px;
   height: 452px;
   background: rgba(20, 20, 20, 0.2), url('path_to_image');
@@ -42,6 +43,20 @@
   gap: 20px;
 }
 .works-item {
+  padding: 12px 0;
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  width: 335px;
+  height: 84px;
+  background: #fbfbfb;
 }
 .works-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #858585;
+}
+.item-accent {
+  font-weight: 700;
+  color: #141414;
 }
