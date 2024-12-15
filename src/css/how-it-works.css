@@ -1,27 +1,92 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
-.container {
-}
 
+@media only screen and (min-width: 1280px) {
+  .container-works {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .works-wrapper {
   padding: 40px 20px;
   width: 375px;
   height: 532px;
   background: #7a3145;
 }
+@media only screen and (min-width: 768px) {
+  .works-wrapper {
+    padding: 100px 64px;
+    width: 768px;
+    height: 840px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .works-wrapper {
+    padding: 100px;
+    width: 640px;
+    height: 760px;
+  }
+}
 .works-img {
   border-radius: 30px;
   width: 335px;
   height: 452px;
-  background: rgba(20, 20, 20, 0.2), url('path_to_image');
+  background: rgba(20, 20, 20, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  .works-img {
+    border-radius: 30px;
+    width: 640px;
+    height: 640px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .works-img {
+    border-radius: 30px;
+    width: 440px;
+    height: 560px;
+  }
 }
 .works-right-side {
+  display: flex;
+  flex-direction: column;
   padding: 80px 20px;
   width: 375px;
   height: 676px;
   background: #576f35;
+  gap: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  .works-right-side {
+    padding: 100px 164px;
+    width: 768px;
+    height: 708px;
+    gap: 52px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .works-right-side {
+    padding: 100px 100px 160px 100px;
+    width: 640px;
+    height: 760px;
+    gap: 104px;
+  }
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    gap: 24px;
+  }
+}
 .works-subtitle {
   font-weight: 600;
   font-size: 28px;
@@ -29,32 +94,63 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  margin-bottom: 20px;
 }
+
 .text-accent {
   color: #d4bfc4;
 }
-.works-desc {
-  margin-bottom: 40px;
-}
+
 .works-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+.works-item::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: counter(item) '';
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  border-radius: 50%;
+  background-color: #7a3145;
+
+  border: 5px solid #d4bfc4;
+  margin-left: 24px;
+  width: 52px;
+  height: 52px;
+}
+
 .works-item {
+  counter-increment: item;
+  display: flex;
+
+  align-items: center;
   padding: 12px 0;
   border-radius: 15px;
-  padding: 12px 27px 12px 24px;
+
   width: 335px;
   height: 84px;
   background: #fbfbfb;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .works-item {
+    padding-right: 25px;
+    width: 440px;
+    height: 76px;
+  }
 }
 .works-text {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.42;
   color: #858585;
+  margin-left: 100px;
 }
 .item-accent {
   font-weight: 700;
