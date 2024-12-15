@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+a{
+  text-decoration: none;
+}
 body {
   font-family: 'Inter Tight', serif;
   color: #ffffff;

@@ -1,97 +1,58 @@
-/* Пишемо виключно тільки свою секцію. 
-Базові, загальні стилі вже прописані в окремих файлах. */
-
-a {
+a{
     text-decoration: none;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0 0 0 0;
-    padding-left: 0;
-}
-
-/* #region Mobile menu */
-
-.menu-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-}
-
-.mobil-menu {
-    position: fixed;
-    visibility: visible;
-    pointer-events: none;
-    opacity: 1;
-    top: 0;
-    left: 0;
+.mobile-menu {
     width: 375px;
-    height: 100%;
-    background: #576F35;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobil-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.mobil-menu-container {
-    position: relative;
+    height: 812px;
+    background-color: #5A6934;
     display: flex;
     flex-direction: column;
-    height: 100%;
-} 
-
-.modal-btn {
-    fill:#fbfbfb;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 16px;
+    position: relative;
+}
+.modal-btn{
     position: absolute;
-    top: 32px;
-    right: 32px;
-}
-
-.menu-nav {
-    margin-top: 72px;
-    margin-bottom: auto;
-}
-
-.menu-link {
-        border: 1px solid #fbfbfb;
-        border-radius: 12px;
-        padding: 12px 24px;
-        width: 118px;
-        height: 44px;
-        font: 500 14px / 1.42857 "Inter Tight", sans-serif;
-         text-align: center;
-         color: #fbfbfb;
+    margin-left: 280px;
+    cursor: pointer;
     
 }
-
-.menu-list {
-display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 24px;
+.menu-list{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75%;
+        gap: 24px;
+        color: white;
+}
+.menu-item{
+    border: 1px solid white;
+        border-radius: 12px;
+        padding: 12px 16px;
+        width: 118px;
+        height: 44px;
+        text-align: center;
 }
 
-.active {
-    background: #fbfbfb;
-    color: #7A3145;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.item-text{
+    color: white;
+    font: 500 14px / 143% var(--font-family);
+        text-align: center;
 }
-
-.mm-button{
-   width: 175px;
-   height: 52px;
-   margin-top: 600px auto;
-
-}
-
-/* #endregion */
+.shop-now-btn{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 30px;
+        border: none;
+            padding: 16px 41px;
+            width: 175px;
+            height: 52px;
+            background-color: #7A3145;
+            color:white;
+            bottom:52px;
+            cursor: pointer;}
