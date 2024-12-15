@@ -39,12 +39,14 @@
 .logo-text-footer-icon {
 }
 
+.footer-logo-moto {
+  margin-bottom: 40px;
+}
 .footer-moto {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
-  margin-bottom: 40px;
 }
 
 .navi-footer {
@@ -88,10 +90,6 @@
 }
 
 .policy-rights {
-  /* font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #d4bfc4; */
 }
 
 .policy-cookies {
@@ -133,5 +131,85 @@
 
   .container {
     min-width: 768px;
+  }
+
+  .footer-core {
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footer-logo-moto {
+    max-width: 265px;
+    margin-bottom: 0;
+  }
+
+  .footer-navi-address {
+    margin-left: auto;
+  }
+
+  .logo-footer-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo-text-footer-icon {
+    width: 188px;
+    height: 17px;
+  }
+
+  .footer-moto {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-address {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .policy-rights {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .policy-cookies {
+    margin-bottom: 0;
+  }
+
+  .footer-policy-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .footer-policy-slash {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .footer-cookies-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .footer-rights-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-logo-moto {
+    margin-right: 250px;
+  }
+  .footer-navi-address {
+    display: flex;
+    width: 100%;
+    align-items: top;
+  }
+
+  .footer-address {
+    margin-left: auto;
   }
 }
