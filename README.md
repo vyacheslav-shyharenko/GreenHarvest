@@ -24,7 +24,7 @@ DEADLINE 18.12.2024
 
 
 
-Yulia Malyarchuk -HEADER
+Yulia Malyarchuk -HEADER     ✓
 
 Oleg Denysenko - MOBILE MENU
 
@@ -32,7 +32,7 @@ Vitalii Hulimov - HERO
 
 Oleksandr Melnyk - HOW IT WORKS
 
-Slava Shyharenko - ADVERTISEMENT	
+Slava Shyharenko - ADVERTISEMENT	  ✓
 
 Mykolai Yalyshko - VEGETABLES
 
@@ -42,7 +42,7 @@ Stas -REWIEWS
 
 Valya Melnyk - YOU ORDER
 
-Ruslan - FOOTER
+Ruslan - FOOTER   ✓
 
 
 

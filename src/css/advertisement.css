@@ -8,7 +8,6 @@
   letter-spacing: -0.72px;
   text-transform: uppercase;
   max-width: 367px;
-  padding: 0 6px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -25,7 +24,7 @@
     font-size: 76px;
     line-height: 76px;
     letter-spacing: -1.14px;
-    max-width: 1112px;
+    max-width: 1064px;
   }
 }
 .section-costume-text {
@@ -34,4 +33,11 @@
   background-color: #576f35;
   color: #fff;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-costume-text {
+    padding-left: 16px;
+    margin-left: -16px;
+  }
 }
