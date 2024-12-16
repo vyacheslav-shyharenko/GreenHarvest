@@ -1,0 +1,127 @@
+.reviews-section {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 20px 0;
+  }
+  
+  .title {
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+  }
+  
+  .highlights {
+    color: green;
+  }
+  
+  .reviews-subtitle {
+    margin-top: 24px;
+    margin-bottom: 52px; 
+    color: #666;
+    text-align: left; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #141414;
+  }
+  
+  /* Карточки отзывов */
+  .reviews-list {
+    display: flex;
+    gap: 24px; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none; 
+  }
+  
+  .reviews-item {
+    flex: 0 0 344px;
+    height: 248px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 24px;
+    text-align: center;
+    border: 1px solid #d4bfc4;
+  
+  
+  height: 248px;
+  }
+  
+  .review-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+  }
+  
+  .review-name {
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #141414;
+  }
+  
+  .paragraph {
+    color: #555;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: #858585;
+  }
+  
+  /* Планшеты (768px) */
+  @media (max-width: 1024px) {
+    .reviews-section {
+      padding-top: 50px;
+    }
+  
+    .reviews-list {
+      justify-content: flex-start;
+    }
+  
+    .reviews-item {
+      flex: 0 0 340px;
+    }
+  
+    .reviews-item:nth-child(3) {
+      display: none;
+    }
+  }
+  
+  /* Мобильные устройства (375px - 767px) */
+  @media (max-width: 767px) {
+    .reviews-subtitle {
+      margin-bottom: 40px; 
+    }
+  
+    .reviews-list {
+      justify-content: flex-start; 
+    }
+  
+    .reviews-item {
+      flex: 0 0 100%; 
+      max-width: 340px;
+      margin: 0 auto;
+    }
+  
+    .reviews-item:nth-child(2),
+    .reviews-item:nth-child(3) {
+      display: none; 
+    }
+  }
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
