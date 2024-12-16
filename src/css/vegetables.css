@@ -6,6 +6,7 @@ img {
 
 .vegetables {
     padding: 80px 0;
+    min-width: 375px;
     background-color: #7a3145;
 }
 
