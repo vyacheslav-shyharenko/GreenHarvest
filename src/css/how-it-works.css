@@ -3,6 +3,23 @@
 .container-works {
   padding: 0;
 }
+
+.how-it-works {
+  background: linear-gradient(to bottom, #7a3145 44.5%, #576f35 44.5%);
+}
+
+@media only screen and (min-width: 768px) {
+  .how-it-works {
+    background: linear-gradient(to bottom, #7a3145 54.25%, #576f35 54.25%);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .how-it-works {
+    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .container-works {
     display: flex;
