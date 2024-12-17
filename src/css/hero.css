@@ -10,7 +10,7 @@
 @media screen and (min-width: 375px) and (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .section-hero {
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 372px 0px;
     width: 100%;
     background: #576f35;
     background-image: url(../img/hero/hero–mobile/img-1-mobile@2x.jpg);
@@ -84,12 +84,12 @@
     max-width: 1112px;
   }
   .section-hero {
+    padding: 232px 0 0 0;
     width: 100%;
     height: 796px;
     margin: 0 auto;
     background-image: url(../img/hero/hero–desktop/img-1-desktop.jpg);
     background-position: calc(50% + 320px) center;
-    padding-top: 232px;
   }
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
