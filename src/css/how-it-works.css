@@ -1,2 +1,183 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+.container-works {
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .container-works {
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.works-wrapper {
+  padding: 40px 20px;
+
+  background: #7a3145;
+}
+@media only screen and (min-width: 768px) {
+  .works-wrapper {
+    padding: 100px 64px;
+    width: 768px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .works-wrapper {
+    padding: 100px;
+    width: 640px;
+    height: 100%;
+  }
+}
+.works-img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  .works-img {
+    border-radius: 30px;
+    width: 640px;
+    height: 640px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .works-img {
+    border-radius: 30px;
+    width: 440px;
+    height: 560px;
+  }
+}
+.works-right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  background: #576f35;
+  gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .works-right-side {
+    padding: 100px 164px;
+    width: 768px;
+    min-height: 708px;
+    gap: 52px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .works-right-side {
+    padding: 100px;
+    width: 640px;
+    min-height: 760px;
+    gap: 104px;
+  }
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  min-height: 192px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    gap: 24px;
+    min-height: 180px;
+  }
+}
+.works-subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .works-subtitle {
+    font-size: 32px;
+  }
+}
+
+.text-accent {
+  color: #d4bfc4;
+}
+.works-desc {
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+@media only screen and (min-width: 768px) {
+  .works-desc {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.works-item::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: counter(item) '';
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  border-radius: 50%;
+  background-color: #7a3145;
+
+  border: 5px solid #d4bfc4;
+
+  width: 52px;
+  height: 52px;
+}
+
+.works-item {
+  counter-increment: item;
+  display: flex;
+
+  align-items: center;
+  padding: 12px 27px 12px 24px;
+
+  border-radius: 15px;
+
+  width: 100%;
+  background: #fbfbfb;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .works-item {
+    padding-right: 15px;
+    width: 440px;
+    height: 76px;
+  }
+}
+.works-text {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #858585;
+  margin-left: 76px;
+}
+@media only screen and (min-width: 768px) {
+  .works-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+  }
+}
+
+.item-accent {
+  font-weight: 700;
+  color: #141414;
+}
