@@ -82,10 +82,9 @@
   .section-hero {
     width: 100%;
     height: 796px;
-    max-width: 1280px;
     margin: 0 auto;
     background-image: url(../img/hero/hero–desktop/img-1-desktop.jpg);
-    background-position: right;
+    background-position: calc(50% + 320px) center;
     padding-top: 232px;
   }
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
