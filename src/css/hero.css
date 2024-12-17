@@ -29,7 +29,6 @@
   text-transform: uppercase;
   color: #fbfbfb;
   padding-bottom: 20px;
-  /* font-size: clamp(46px, 2.5vw, 52px); */
 }
 
 @media screen and (max-width: 353px) {
