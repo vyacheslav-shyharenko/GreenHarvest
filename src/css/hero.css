@@ -45,6 +45,8 @@
   padding-bottom: 40px;
 }
 
+/* Tablet */
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 736px;
@@ -77,6 +79,8 @@
     padding-bottom: 52px;
   }
 }
+
+/* Desctop */
 
 @media only screen and (min-width: 1280px) {
   .container {
