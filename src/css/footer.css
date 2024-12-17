@@ -20,19 +20,7 @@
 }
 
 .wrapper-logo-footer {
-  display: flex;
-  align-items: center;
-
   margin-bottom: 14px;
-}
-
-.logo-footer-icon {
-  margin-right: 4px;
-}
-
-.icon {
-}
-.logo-text-footer-icon {
 }
 
 .footer-logo-moto {
@@ -134,16 +122,6 @@
 
   .footer-navi-address {
     margin-left: auto;
-  }
-
-  .logo-footer-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .logo-text-footer-icon {
-    width: 188px;
-    height: 17px;
   }
 
   .footer-moto {
