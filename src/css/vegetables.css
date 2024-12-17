@@ -1,12 +1,12 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
 img {
+    width: 100%;
     height: auto;
 }
 
 .vegetables {
     padding: 80px 0;
-    min-width: 375px;
     background-color: #7a3145;
 }
 
@@ -21,7 +21,7 @@ img {
 }
 
 .vegetables_text {
-    width: 335px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42857;
@@ -67,6 +67,7 @@ img {
     line-height: 1.25;
     color: #141414;
 }
+
 
 @media only screen and (min-width: 768px) {
 
