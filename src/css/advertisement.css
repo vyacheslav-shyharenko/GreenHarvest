@@ -15,7 +15,7 @@
     font-size: 64px;
     line-height: 64px;
     letter-spacing: -0.96px;
-    max-width: 736px;
+    max-width: 768px;
   }
 }
 
@@ -24,7 +24,8 @@
     font-size: 76px;
     line-height: 76px;
     letter-spacing: -1.14px;
-    max-width: 1064px;
+    max-width: 1054px;
+    margin: 0 auto 0 16px;
   }
 }
 .section-costume-text {
