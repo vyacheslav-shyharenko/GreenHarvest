@@ -1,6 +1,6 @@
 .section-hero {
-  padding: 100px 0px 0px 0px;
-  height: 840px;
+  padding: 100px 0px 372px 0px;
+  height: auto;
   background: #576f35;
   background-image: url(../img/hero/hero–mobile/img-1-mobile.jpg);
   background-position: center;
@@ -23,13 +23,19 @@
 
 .hero-title {
   font-weight: 600;
-  /* font-size: 52px; */
+  font-size: 52px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  margin-bottom: 20px;
-  font-size: clamp(46px, 2.5vw, 52px);
+  padding-bottom: 20px;
+  /* font-size: clamp(46px, 2.5vw, 52px); */
+}
+
+@media screen and (max-width: 353px) {
+  .hero-title {
+    font-size: clamp(46px, 2.5vw, 52px);
+  }
 }
 
 .hero-p {
@@ -37,7 +43,7 @@
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,13 +51,10 @@
     max-width: 736px;
   }
   .section-hero {
-    padding: 120px 0px 0px 0px;
+    padding: 120px 0px 536px 0px;
     width: 100%;
-    height: 1020px;
+    height: auto;
     background-image: url(../img/hero/hero–tablet/img-1-tablet.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
   }
   @media screen and (min-width: 768px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -64,7 +67,7 @@
   .hero-title {
     font-size: 76px;
     width: 704px;
-    margin-bottom: 24px;
+    padding-bottom: 24px;
   }
   .hero-p {
     width: 603px;
@@ -72,6 +75,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: #fbfbfb;
+    padding-bottom: 52px;
   }
 }
 
@@ -92,7 +96,7 @@
     .section-hero {
       background-image: url(../img/hero/hero–desktop/img-1-desktop@2x.jpg);
       background-size: contain;
-      background-position: right;
+      background-position: calc(50% + 320px) center;
       background-repeat: no-repeat;
     }
   }
@@ -104,7 +108,7 @@
     text-transform: uppercase;
     color: #fbfbfb;
     width: 502px;
-    margin-bottom: 128px;
+    padding-bottom: 128px;
   }
   .hero-p {
     width: 471px;
