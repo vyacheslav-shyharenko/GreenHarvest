@@ -1,5 +1,4 @@
 .reviews-section {
-  margin-bottom: 80px;
   width: 100%;
 }
 
@@ -78,9 +77,6 @@
 
 /* Tablet (768px) */
 @media only screen and (min-width: 768px) {
-  .reviews-section {
-    margin: 100px 0;
-  }
   .paragraph {
     font-size: 16px;
     line-height: 1.25;
@@ -110,9 +106,6 @@
 }
 /* Desktop */
 @media only screen and (min-width: 1280px) {
-  .reviews-section {
-    margin-bottom: 80px;
-  }
 
   .title {
     width: 553px;
