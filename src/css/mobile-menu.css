@@ -45,6 +45,17 @@
   cursor: pointer;
 }
 
+.menu-item {
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.menu-item:active {
+  background-color: #fff;
+}
+.item-text:active {
+  color: #7a3145;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu {
     max-width: 351px;
