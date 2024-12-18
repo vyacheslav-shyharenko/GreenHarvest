@@ -1,2 +1,141 @@
-/* Пишемо виключно тільки свою секцію. 
-Базові, загальні стилі вже прописані в окремих файлах. */
+.reviews-section {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  min-width: 335px;
+  font-weight: 600;
+  line-height: 1.08333;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #141414;
+  font-size: 48px;
+}
+
+.highlights {
+  color: #576f35;
+}
+
+.reviews-subtitle {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.428;
+  color: #141414;
+}
+.reviews-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.reviews-item {
+  width: 100%;
+  max-width: 335px;
+  padding: 20px 16px;
+  border-radius: 24px;
+  text-align: center;
+  border: 1px solid #d4bfc4;
+  box-sizing: border-box;
+}
+
+.reviews-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+}
+
+.paragraph {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.428;
+  text-align: center;
+  color: #858585;
+  padding-top: 8px;
+}
+.reviews-item:nth-child(2),
+.reviews-item:nth-child(3) {
+  display: none;
+}
+
+/* Tablet (768px) */
+@media only screen and (min-width: 768px) {
+  .reviews-section {
+    margin: 100px 0;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .reviews-list {
+    gap: 24px;
+  }
+  .reviews-item {
+    width: 340px;
+    padding: 20px;
+  }
+
+  .reviews-item:nth-child(2) {
+    display: block;
+  }
+  .title {
+    font-size: 64px;
+    width: 553px;
+  }
+  .reviews-subtitle {
+    width: 553px;
+    margin-top: 24px;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+  .reviews-section {
+    margin-bottom: 80px;
+  }
+
+  .title {
+    width: 553px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .reviews-subtitle {
+    margin-bottom: 52px;
+    width: 553px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .reviews-item {
+    width: 344px;
+    padding: 20px;
+    gap: 24px;
+  }
+  .reviews-item:nth-child(2),
+  .reviews-item:nth-child(3) {
+    display: block;
+  }
+}
