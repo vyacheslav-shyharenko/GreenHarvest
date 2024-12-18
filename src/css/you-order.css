@@ -7,7 +7,6 @@ img{
 
 .your-order {
     background-color: #576f35;
-    padding: 80px 0;
   }
   
   .order-title,
@@ -186,10 +185,7 @@ img{
   
   /* Tablet screen */
   @media only screen and (min-width: 768px) {
-    .your-order {
-      padding: 100px 0;
-    }
-  
+ 
     .order-title {
       font-size: 64px;
       line-height: 1;
