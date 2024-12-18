@@ -32,7 +32,7 @@ mobileMenu.addEventListener('click', function (event) {
 });
 
 // Закриття меню через існуючу кнопку закриття
-closeModalBtn.addEventListener('click', function () {
+closeMenuBtn.addEventListener('click', function () {
   overlay.classList.remove('is-open');
   mobileMenu.classList.remove('is-open');
 });
