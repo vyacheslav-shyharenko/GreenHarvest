@@ -1,114 +1,120 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
 .mobile-menu {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #576F35;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px 52px;
-    margin-left: auto;
-    transform: translateX(100%);
-    transition: transform 350ms cubic-bezier(0.35, 0.56, 0.36, 0.58);
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #576f35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 52px;
+  margin-left: auto;
+  transform: translateX(100%);
+  transition: transform 350ms cubic-bezier(0.35, 0.56, 0.36, 0.58);
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
-    background: rgba(20, 20, 20, 0.4);
-    pointer-events: none;
-    transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(20, 20, 20, 0.4);
+  pointer-events: none;
+  transform: translateX(100%);
 }
 
 .is-open {
-    pointer-events: auto;
-    transform: translateX(0%);
+  pointer-events: auto;
+  transform: translateX(0%);
 }
 
 .modal-btn {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 20px;
-    right: 20px;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-@media only screen and (min-width: 768px) {
-    .mobile-menu {
-        max-width: 351px;
-    }
-}
-
-.modal-btn-icon {
-    stroke: #FBFBFB;
-}
-
-.menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.menu-item-active {
-    border: 1px solid #fff;
-    border-radius: 12px;
-    padding: 12px 16px;
-    width: 100%;
-    height: 100%;
-    background: white;
-}
-
-.item-text-active {
-    text-align: center;
-    color: #7A3145;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .menu-item {
-    border: 1px solid #fff;
-    border-radius: 12px;
-    padding: 12px 24px;
-    width: 100%;
-    height: 100%;
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+.menu-item:active {
+  background-color: #fff;
+}
+.item-text:active {
+  color: #7a3145;
 }
 
 @media only screen and (min-width: 768px) {
-    .menu-item {
-        padding: 12px 21px;
-    }
+  .mobile-menu {
+    max-width: 351px;
+  }
+}
+
+.modal-btn-icon {
+  stroke: #fbfbfb;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.menu-item-active {
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.item-text-active {
+  text-align: center;
+  color: #7a3145;
+}
+
+.menu-item {
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 12px 24px;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-item {
+    padding: 12px 21px;
+  }
 }
 
 .item-text {
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
 }
 
 .shop-now-btn {
-    border-radius: 30px;
-    padding: 16px 41px;
-    width: 175px;
-    height: 52px;
-    background-color: #7A3145;
-    color: white;
-    border: transparent;
-    cursor: pointer;
+
+  max-width: 175px;
+
 }
 
 @media only screen and (min-width: 1280px) {
-    .overlay {
-        display: none;
-    }
+  .overlay {
+    display: none;
+  }
 }
