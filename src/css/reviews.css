@@ -1,6 +1,5 @@
 .reviews-section {
-  margin-bottom: 80px;
-  width: 100%;
+  padding: 80px 0;
 }
 
 .title {
@@ -12,6 +11,7 @@
   text-transform: uppercase;
   color: #141414;
   font-size: 48px;
+  margin-bottom: 24px;
 }
 
 .highlights {
@@ -20,7 +20,6 @@
 
 .reviews-subtitle {
   width: 100%;
-  margin-top: 20px;
   margin-bottom: 40px;
   text-align: left;
   font-weight: 500;
@@ -62,6 +61,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #141414;
+  margin-bottom: 8px;
 }
 
 .paragraph {
@@ -70,7 +70,7 @@
   line-height: 1.428;
   text-align: center;
   color: #858585;
-  padding-top: 8px;
+  max-width: 287px;
 }
 .reviews-item:nth-child(2),
 .reviews-item:nth-child(3) {
@@ -80,7 +80,7 @@
 /* Tablet (768px) */
 @media only screen and (min-width: 768px) {
   .reviews-section {
-    margin: 100px 0;
+    padding: 100px 0;
   }
   .paragraph {
     font-size: 16px;
@@ -103,7 +103,6 @@
   }
   .reviews-subtitle {
     width: 553px;
-    margin-top: 24px;
     margin-bottom: 52px;
     font-size: 16px;
     line-height: 1.25;
@@ -111,27 +110,15 @@
 }
 /* Desktop */
 @media only screen and (min-width: 1280px) {
-  .reviews-section {
-    margin-bottom: 80px;
-  }
-
   .title {
-    width: 553px;
     font-weight: 600;
-    font-size: 64px;
     line-height: 1;
     letter-spacing: -0.01em;
   }
   .reviews-subtitle {
-    margin-bottom: 52px;
-    width: 553px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
   }
   .reviews-item {
-    width: 344px;
-    padding: 20px;
     gap: 24px;
   }
   .reviews-item:nth-child(2),
