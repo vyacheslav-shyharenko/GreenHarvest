@@ -21,37 +21,35 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-    <div class="header-contaiter container">
-        <a class="wrapper-logo-header logo-common" href="/">
-            <svg class="logo-header-icon icon" width="16" height="16">
-                <use href="/404_not_found/assets/icons-De2xKkWH.svg#logo"></use>
-            </svg>
-            <svg class="logo-text-header-icon icon" width="148" height="12">
-                <use href="/404_not_found/assets/icons-De2xKkWH.svg#logo-green-harvest"></use>
-            </svg>
-        </a>
-        <button class="menu-button" type="button">
-            <svg class="menu-icon" width="32" height="32">
-                <use href="/404_not_found/assets/icons-De2xKkWH.svg#icon-burger-menu"></use>
-            </svg>
-        </button>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#how-it-works" class="nav-link">How It Works</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#vegetables" class="nav-link">Vegetables</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#reviews" class="nav-link">Reviews</a>
-                </li>
-            </ul>
-            <button class="btn-shop-now button" type="button">
-                shop now
-            </button>
-        </nav>
-    </div>
+  <div class="header-contaiter container">
+    <a class="wrapper-logo-header logo-common" href="/">
+      <svg class="logo-header-icon icon" width="16" height="16">
+        <use href="/404_not_found/assets/icons-De2xKkWH.svg#logo"></use>
+      </svg>
+      <svg class="logo-text-header-icon icon" width="148" height="12">
+        <use href="/404_not_found/assets/icons-De2xKkWH.svg#logo-green-harvest"></use>
+      </svg>
+    </a>
+    <button class="menu-button" type="button" id="open-modal-btn">
+      <svg class="menu-icon" width="32" height="32">
+        <use href="/404_not_found/assets/icons-De2xKkWH.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a href="#vegetables" class="nav-link">Vegetables</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+      </ul>
+      <button class="btn-shop-now button" type="button">shop now</button>
+    </nav>
+  </div>
 </header>
 
     <main>
@@ -356,26 +354,27 @@
 
     <!-- MOBILE MENU -->
     <div class="overlay">
-    <div class="mobile-menu">
-        <button class="modal-btn" type="shop-now-btn" data-modal-close>
-            <svg class="modal-btn-icon" width="32" height="32">
-                <use href="/404_not_found/assets/icons-De2xKkWH.svg#close-icon"></use>
-            </svg>
-        </button>
-        <ul class="menu-list">
-            <li class="menu-item-active">
-                <a class="item-text-active" href="partials/how-it-works.html">How It Works</a>
-            </li>
-            <li class="menu-item">
-                <a class="item-text" href="partials/vegetables.html">Vegetables</a>
-            </li>
-            <li class="menu-item">
-                <a class="item-text" href="partials/reviews.html">Reviews</a>
-            </li>
-        </ul>
-        <button type="button" class="shop-now-btn">SHOP NOW</button>
-    </div>
+  <div class="mobile-menu">
+    <button class="modal-btn" type="shop-now-btn" id="close-menu-btn">
+      <svg class="modal-btn-icon" width="32" height="32">
+        <use href="/404_not_found/assets/icons-De2xKkWH.svg#close-icon"></use>
+      </svg>
+    </button>
+    <ul class="menu-list">
+      <li class="menu-item-active">
+        <a class="item-text-active" href="#how-it-works">How It Works</a>
+      </li>
+      <li class="menu-item">
+        <a class="item-text" href="#vegetables">Vegetables</a>
+      </li>
+      <li class="menu-item">
+        <a class="item-text" href="#reviews">Reviews</a>
+      </li>
+    </ul>
+    <button type="button" class="shop-now-btn">SHOP NOW</button>
+  </div>
 </div>
+
 
   </body>
 </html>
