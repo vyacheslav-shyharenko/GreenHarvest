@@ -16,28 +16,14 @@
         margin-top: 32px;
     }
 }
-.wrapper-logo-header{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-@media only screen and (min-width: 768px) {
-    .wrapper-logo-header{
-        gap: 9px;
-    }
-}
-.logo-header-icon {
 
-}
 @media only screen and (min-width: 768px) {
     .logo-header-icon{
         width: 20px;
         height: 20px;
     }
 }
-.logo-text-header-icon{
 
-}
 @media only screen and (min-width: 768px) {
    .logo-text-header-icon{
         width: 188px;
