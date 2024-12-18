@@ -108,14 +108,9 @@
 }
 
 .shop-now-btn {
-  border-radius: 30px;
-  padding: 16px 41px;
-  width: 175px;
-  height: 52px;
-  background-color: #7a3145;
-  color: white;
-  border: transparent;
-  cursor: pointer;
+
+  max-width: 175px;
+
 }
 
 @media only screen and (min-width: 1280px) {
