@@ -1,7 +1,6 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
 .vegetables {
-    padding: 80px 0; 
     background-color: #7a3145;
 }
 
@@ -70,11 +69,6 @@
 
 @media only screen and (min-width: 768px) {
 
-    .vegetables {
-        padding: 100px 0;
-
-    }
-
     .vegetables_title {
         font-size: 64px;
     }
@@ -102,10 +96,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .vegetables {
-        padding: 100px;
-    }
-
+  
    /* .vegetables_list { 
         max-width: 1080px;
     }
