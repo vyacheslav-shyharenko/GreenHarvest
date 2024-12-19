@@ -23,7 +23,7 @@
     margin-bottom: 52px;
 }
 
-.vegetables_color {
+.vegetables_title-color {
     color: #d4bfc4;
 }
 
@@ -46,7 +46,7 @@
     margin-bottom: 8px;
 }
 
-.vegetables_list-text {
+.vegetables_title-list {
     font-weight: 600;
     font-size: 32px;
     line-height: 1;
@@ -55,7 +55,7 @@
     color: #7a3145;
     margin-bottom: 12px;
 }
-.vegetables_list-section {
+.vegetables_product-info {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
