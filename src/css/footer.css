@@ -13,7 +13,6 @@
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  /* gap: 72px; */
 }
 
 .footer-core {
@@ -21,22 +20,7 @@
 }
 
 .wrapper-logo-footer {
-  display: flex;
-  align-items: center;
-  /* font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #fbfbfb; */
   margin-bottom: 14px;
-}
-
-.logo-footer-icon {
-  margin-right: 4px;
-}
-
-.icon {
-}
-.logo-text-footer-icon {
 }
 
 .footer-logo-moto {
@@ -54,10 +38,6 @@
 }
 
 .navi-list {
-  /* display: flex; */
-  /* align-items: center; */
-  /* gap: 8px; */
-  /* margin-right: 20px; */
 }
 
 .navi-item:not(:last-child) {
@@ -79,11 +59,7 @@
   line-height: 1.43;
   color: #fbfbfb;
 }
-/* .address-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-} */
+
 .footer-tel {
   color: #fbfbfb;
   margin-bottom: 14px;
@@ -146,16 +122,6 @@
 
   .footer-navi-address {
     margin-left: auto;
-  }
-
-  .logo-footer-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .logo-text-footer-icon {
-    width: 188px;
-    height: 17px;
   }
 
   .footer-moto {
