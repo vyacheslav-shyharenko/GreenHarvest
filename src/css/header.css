@@ -78,8 +78,6 @@
 }
 
 .nav-item {
-  border: 1px solid #fbfbfb;
-  border-radius: 12px;
 }
 
 .nav-link {
@@ -88,7 +86,22 @@
   line-height: 1.25;
   text-align: center;
   color: #fbfbfb;
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
   padding: 12px;
+  transition: 350ms ease-in-out;
+}
+@media only screen and (hover: hover) { 
+  .nav-link:hover,
+  .nav-link:focus {
+    background-color: #ccddb7;
+    color: #576F35;
+    border: 1px solid #ccddb7;
+  }
+}
+.nav-link:active {
+    background-color: #fbfbfb;
+    color: #576F35;
 }
 .btn-shop-now {
   width: 158px;
