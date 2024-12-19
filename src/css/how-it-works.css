@@ -1,21 +1,15 @@
-/* Пишемо виключно тільки свою секцію. 
-Базові, загальні стилі вже прописані в окремих файлах. */
-
 /* #region mobile */
-.how-it-works {
-  background: linear-gradient(to bottom, #7a3145 44%, #576f35 44%);
-}
-
-.container-works {
-  padding: 0;
-}
 
 .works-wrapper {
   padding: 40px 20px;
+  background-color: #7a3145;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.works-wrapper {
-  padding: 40px 20px;
+.img-block {
+  display: block;
+  max-width: 335px;
 }
 .works-img {
   border-radius: 30px;
@@ -23,19 +17,26 @@
   height: 100%;
   background: rgba(20, 20, 20, 0.2);
 }
+
 .works-right-side {
   display: flex;
   flex-direction: column;
-  padding: 80px 20px;
+  background-color: #576f35;
   gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
 }
 
 .sidebar {
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
-  gap: 20px;
 
-  min-height: 192px;
+  gap: 24px;
+  gap: 20px;
+  width: 335px;
 }
 
 .works-subtitle {
@@ -50,6 +51,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 335px;
 }
 
 .works-item {
@@ -108,28 +110,28 @@
 
 /* #region tablet */
 @media only screen and (min-width: 768px) {
-  .how-it-works {
-    background: linear-gradient(to bottom, #7a3145 54.25%, #576f35 54.25%);
-  }
-
   .works-wrapper {
-    padding: 100px 64px;
-    max-width: 768px;
+    padding: 100px 0;
   }
 
+  .img-block {
+    max-width: 704px;
+  }
   .works-img {
     width: 640px;
     height: 640px;
   }
   .works-right-side {
     padding: 100px 164px;
-    width: 100%;
     min-height: 708px;
     gap: 52px;
   }
   .sidebar {
     gap: 24px;
-    min-height: 180px;
+    width: 440px;
+  }
+  .works-subtitle {
+    font-size: 32px;
   }
   .works-desc {
     font-size: 16px;
@@ -138,10 +140,12 @@
   .works-text {
     font-size: 16px;
     line-height: 1.25;
-    width: 100%;
   }
   .works-item {
     padding-right: 15px;
+    width: 440px;
+  }
+  .works-list {
     width: 440px;
   }
 }
@@ -150,19 +154,13 @@
 /* #region desktop */
 @media only screen and (min-width: 1280px) {
   .how-it-works {
-    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
-  }
-  .container-works {
     display: flex;
-    align-items: flex-start;
-
-    flex-direction: row;
-    justify-content: center;
   }
+
   .works-wrapper {
-    padding: 100px 100px;
-    max-width: 640px;
-    height: 100%;
+    width: 50%;
+    justify-content: right;
+    padding-right: 100px;
   }
 
   .works-img {
@@ -170,16 +168,22 @@
     height: 560px;
   }
   .works-right-side {
-    padding: 100px;
-    width: 640px;
-    gap: 104px;
+    display: block;
+
+    width: 50%;
+    justify-content: start;
+    padding-left: 100px;
   }
+
   .works-subtitle {
     font-size: 32px;
   }
   .works-item {
     padding-right: 15px;
     width: 440px;
+  }
+  .works-desc {
+    margin-bottom: 104px;
   }
 }
 
