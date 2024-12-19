@@ -1,2 +1,186 @@
 /* Пишемо виключно тільки свою секцію. 
 Базові, загальні стилі вже прописані в окремих файлах. */
+
+/* #region mobile */
+.how-it-works {
+  background: linear-gradient(to bottom, #7a3145 44%, #576f35 44%);
+}
+
+.container-works {
+  padding: 0;
+}
+
+.works-wrapper {
+  padding: 40px 20px;
+}
+
+.works-wrapper {
+  padding: 40px 20px;
+}
+.works-img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.2);
+}
+.works-right-side {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  gap: 40px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  min-height: 192px;
+}
+
+.works-subtitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.works-item {
+  counter-increment: item;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 12px 27px 12px 100px;
+
+  border-radius: 15px;
+
+  min-height: 76px;
+  background: #fbfbfb;
+  gap: 24px;
+}
+.works-item::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  content: counter(item) '';
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  border-radius: 50%;
+  background-color: #7a3145;
+
+  border: 5px solid #d4bfc4;
+
+  width: 52px;
+  height: 52px;
+}
+
+.text-accent {
+  color: #d4bfc4;
+}
+.works-desc {
+  font-size: 14px;
+  line-height: 1.42;
+}
+.works-text {
+  font-size: 14px;
+  line-height: 1.42;
+  color: #858585;
+}
+.item-accent {
+  font-weight: 700;
+  color: #141414;
+}
+/* #endregion */
+
+/* #region tablet */
+@media only screen and (min-width: 768px) {
+  .how-it-works {
+    background: linear-gradient(to bottom, #7a3145 54.25%, #576f35 54.25%);
+  }
+
+  .works-wrapper {
+    padding: 100px 64px;
+    max-width: 768px;
+  }
+
+  .works-img {
+    width: 640px;
+    height: 640px;
+  }
+  .works-right-side {
+    padding: 100px 164px;
+    width: 100%;
+    min-height: 708px;
+    gap: 52px;
+  }
+  .sidebar {
+    gap: 24px;
+    min-height: 180px;
+  }
+  .works-desc {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .works-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 100%;
+  }
+  .works-item {
+    padding-right: 15px;
+    width: 440px;
+  }
+}
+/* #endregion */
+
+/* #region desktop */
+@media only screen and (min-width: 1280px) {
+  .how-it-works {
+    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
+  }
+  .container-works {
+    display: flex;
+    align-items: flex-start;
+
+    flex-direction: row;
+    justify-content: center;
+  }
+  .works-wrapper {
+    padding: 100px 100px;
+    max-width: 640px;
+    height: 100%;
+  }
+
+  .works-img {
+    width: 440px;
+    height: 560px;
+  }
+  .works-right-side {
+    padding: 100px;
+    width: 640px;
+    gap: 104px;
+  }
+  .works-subtitle {
+    font-size: 32px;
+  }
+  .works-item {
+    padding-right: 15px;
+    width: 440px;
+  }
+}
+
+/* #endregion */
