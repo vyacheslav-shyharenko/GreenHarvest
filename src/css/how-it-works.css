@@ -172,7 +172,7 @@
 
     width: 50%;
     justify-content: start;
-    padding-left: 100px;
+    padding: 100px 0 100px 100px;
   }
 
   .works-subtitle {
