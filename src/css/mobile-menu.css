@@ -45,15 +45,13 @@
   cursor: pointer;
 }
 
-
 .item-text {
   border: 1px solid #fff;
   border-radius: 12px;
   width: 100%;
   transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
   padding: 12px 21px;
-  
-  
+  color: #fff;
 }
 
 .item-text:hover,
@@ -65,7 +63,6 @@
 .item-text:active {
   color: #7a3145;
 }
-
 
 @media only screen and (min-width: 768px) {
   .mobile-menu {
@@ -85,13 +82,10 @@
   margin-bottom: auto;
 }
 
-
 @media only screen and (min-width: 768px) {
-
-.shop-now-btn {
-
-  max-width: 175px;
-
+  .shop-now-btn {
+    max-width: 175px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
