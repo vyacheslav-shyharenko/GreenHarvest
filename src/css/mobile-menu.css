@@ -51,6 +51,8 @@
   border-radius: 12px;
   width: 100%;
   transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+  padding: 12px 21px;
+  
   
 }
 
@@ -85,12 +87,6 @@
 
 
 @media only screen and (min-width: 768px) {
-  .menu-item {
-    padding: 12px 21px;
-  }
-}
-
-
 
 .shop-now-btn {
 
