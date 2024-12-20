@@ -353,6 +353,8 @@ img {
   }
 }
 
-.btn-order:active {
+
+.btn-order:active,
+.btn-order:active:hover{
   outline: 2px solid #7a3145;
 }
