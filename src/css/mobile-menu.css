@@ -63,14 +63,14 @@
     margin-bottom: auto;
 }
 
-.menu-item:hover, .menu-item:focus {
+.menu-item:active {
     border: 1px solid #fff;
     background: white;
     color: #7A3145;
 
 }
 
-.item-text:hover, .item-text:focus {
+.item-text:active {
     color: #7A3145;
 }
 
@@ -103,6 +103,11 @@
     color: white;
     border: transparent;
     cursor: pointer;
+}
+
+.shop-now-btn:active{
+    background-color: #fff;
+    color:#7A3145;
 }
 
 @media only screen and (min-width: 1280px) {
