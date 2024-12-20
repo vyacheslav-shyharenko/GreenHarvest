@@ -128,7 +128,7 @@
   }
   .sidebar {
     gap: 24px;
-    width: 440px;
+    max-width: 440px;
   }
   .works-subtitle {
     font-size: 32px;
@@ -146,7 +146,7 @@
     width: 440px;
   }
   .works-list {
-    width: 440px;
+    max-width: 440px;
   }
 }
 /* #endregion */
