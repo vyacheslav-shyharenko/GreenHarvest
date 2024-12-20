@@ -33,6 +33,10 @@
   transform: translateX(0%);
 }
 
+.nav-mob {
+  margin-bottom: auto;
+  margin-top: auto;
+}
 .modal-btn {
   position: absolute;
   width: 32px;
@@ -53,16 +57,16 @@
   padding: 12px 21px;
   color: #fff;
   text-align: center;
-  
 }
 
 .item-text:focus {
-  background: white;
+  background: #fff;
   color: #7a3145;
 }
 
 .item-text:active {
   color: #7a3145;
+  background: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -79,8 +83,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -94,8 +96,8 @@
     display: none;
   }
 
-  .item-text:hover{
-  background: white;
-  color: #7a3145;
+  .item-text:hover {
+    background: white;
+    color: #7a3145;
   }
 }
