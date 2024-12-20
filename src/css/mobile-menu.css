@@ -63,16 +63,9 @@
     margin-bottom: auto;
 }
 
-.menu-item:hover, .menu-item:focus {
-    border: 1px solid #fff;
-    background: white;
-    color: #7A3145;
 
-}
 
-.item-text:active {
-    color: #7A3145;
-}
+
 
 .menu-item {
     border: 1px solid #fff;
@@ -83,6 +76,16 @@
 
 }
 
+.menu-item:hover, .menu-item:focus {
+    border: 1px solid #fff;
+    background: white;
+    color: #7A3145;
+
+}
+
+.item-text:active {
+    color: #7A3145;
+}
 @media only screen and (min-width: 768px) {
   
 }
