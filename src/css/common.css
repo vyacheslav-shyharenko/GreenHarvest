@@ -30,7 +30,8 @@
 
 /* For desktop */
 @media only screen and (min-width: 1280px) {
-  .button:hover {
+  .button:hover,
+  .button:focus {
     background-color: #d4bfc4;
     color: #7a3145;
   }
@@ -38,6 +39,7 @@
 
 .button:active {
   background-color: #fbfbfb;
+  color: #7a3145;
 }
 
 .icon {
