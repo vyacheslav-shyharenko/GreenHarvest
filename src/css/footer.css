@@ -23,6 +23,9 @@
   margin-bottom: 14px;
 }
 
+.footer-post-address {
+  color: #fff;
+}
 .footer-logo-moto {
   margin-bottom: 40px;
 }
@@ -37,9 +40,6 @@
   margin-bottom: 40px;
 }
 
-.navi-list {
-}
-
 .navi-item:not(:last-child) {
   margin-bottom: 14px;
 }
@@ -51,6 +51,12 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  transition: scale 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.navi-link:hover {
+  scale: 1.1;
+  color: #d4bfc4;
 }
 .footer-address {
   font-style: normal;
@@ -63,9 +69,6 @@
 .footer-tel {
   color: #fbfbfb;
   margin-bottom: 14px;
-}
-
-.policy-rights {
 }
 
 .policy-cookies {
@@ -166,6 +169,12 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .footer-core {
+    margin-bottom: 124px;
+  }
+  .navi-footer {
+    margin-bottom: 0;
+  }
   .footer-logo-moto {
     margin-right: 250px;
   }
