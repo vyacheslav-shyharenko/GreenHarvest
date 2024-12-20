@@ -52,6 +52,8 @@
   transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
   padding: 12px 21px;
   color: #fff;
+  text-align: center;
+  
 }
 
 .item-text:hover,
