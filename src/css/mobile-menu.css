@@ -70,7 +70,7 @@
 
 }
 
-.item-text:hover, .item-text:focus {
+.item-text:active {
     color: #7A3145;
 }
 
