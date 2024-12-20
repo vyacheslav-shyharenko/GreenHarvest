@@ -45,16 +45,25 @@
   cursor: pointer;
 }
 
-.menu-item {
+
+.item-text {
+  border: 1px solid #fff;
+  border-radius: 12px;
+  width: 100%;
   transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+  
 }
 
-.menu-item:active {
-  background-color: #fff;
+.item-text:hover,
+.item-text:focus {
+  background: white;
+  color: #7a3145;
 }
+
 .item-text:active {
   color: #7a3145;
 }
+
 
 @media only screen and (min-width: 768px) {
   .mobile-menu {
@@ -74,27 +83,6 @@
   margin-bottom: auto;
 }
 
-.menu-item-active {
-  border: 1px solid #fff;
-  border-radius: 12px;
-  padding: 12px 16px;
-  width: 100%;
-  height: 100%;
-  background: white;
-}
-
-.item-text-active {
-  text-align: center;
-  color: #7a3145;
-}
-
-.menu-item {
-  border: 1px solid #fff;
-  border-radius: 12px;
-  padding: 12px 24px;
-  width: 100%;
-  height: 100%;
-}
 
 @media only screen and (min-width: 768px) {
   .menu-item {
@@ -102,10 +90,7 @@
   }
 }
 
-.item-text {
-  text-align: center;
-  color: #fff;
-}
+
 
 .shop-now-btn {
 
