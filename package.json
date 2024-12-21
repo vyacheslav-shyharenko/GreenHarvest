@@ -1,11 +1,11 @@
 {
-  "name": "404_not_found",
+  "name": "GreenHarvest",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/404_not_found/",
+    "build": "vite build --base=/GreenHarvest/",
     "preview": "vite preview"
   },
   "devDependencies": {
