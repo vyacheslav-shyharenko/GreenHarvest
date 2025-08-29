@@ -1,0 +1,14 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-status-color-map: m.$STATUS-COLOR;
+
+// СSS змінні --var()
+
+// Status
+$v-status-default: css.get(color, 'status.default', css);
+$v-status-info: css.get(color, 'status.info', css);
+$v-status-success: css.get(color, 'status.success', css);
+$v-status-warning: css.get(color, 'status.warning', css);
+$v-status-danger: css.get(color, 'status.danger', css);

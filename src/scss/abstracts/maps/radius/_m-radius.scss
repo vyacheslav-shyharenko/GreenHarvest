@@ -1,0 +1,11 @@
+@use "../../functions/f-units" as u;
+
+$RADIUS: (
+  none: u.rem(0px),
+  xs: u.rem(2px),
+  sm: u.rem(4px),
+  md: u.rem(8px),
+  lg: u.rem(12px),
+  xl: u.rem(16px),
+  xxl: u.rem(24px),
+);

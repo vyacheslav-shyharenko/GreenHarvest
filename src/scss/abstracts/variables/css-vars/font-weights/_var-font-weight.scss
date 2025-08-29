@@ -1,0 +1,11 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-font-weight-map: m.$FONT-WEIGHT;
+
+// СSS змінні --var()
+
+$v-fw-regular: css.get(font-weight, regular, css);
+$v-fw-medium: css.get(font-weight, medium, css);
+$v-fw-bold: css.get(font-weight, bold, css);

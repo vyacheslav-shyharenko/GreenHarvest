@@ -1,0 +1,30 @@
+@use 'sass:map';
+@use '../../maps' as m;
+
+@mixin mq($bp: sm, $type: min, $is-retina: false) {
+  @if map.has-key(m.$BREAKPOINT, $bp) {
+    $width: map.get(m.$BREAKPOINT, $bp);
+
+    @if $type == max {
+      $width: $width - 0.02px;
+    }
+
+    $media-condition: '(#{$type}-width: #{$width})';
+
+    @if $is-retina {
+      $media: '(#{$type}-width: #{$width}) and (-webkit-min-device-pixel-ratio: 2), ' +
+        '(#{$type}-width: #{$width}) and (min-resolution: 192dpi), ' +
+        '(#{$type}-width: #{$width}) and (min-resolution: 2dppx)';
+
+      @media only screen and #{$media} {
+        @content;
+      }
+    } @else {
+      @media only screen and #{$media-condition} {
+        @content;
+      }
+    }
+  } @else {
+    @warn "❗ Breakpoint `#{$bp}` not found in $breakpoints map.";
+  }
+}

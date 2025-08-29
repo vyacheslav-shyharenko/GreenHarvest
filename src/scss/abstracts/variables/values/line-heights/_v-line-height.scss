@@ -1,0 +1,12 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$line-height-map: m.$LINE-HEIGHT;
+
+// СSS змінні --var()
+
+$lh-tight: token.get(line-height, tight);
+$lh-base: token.get(line-height, base);
+$lh-relaxed: token.get(line-height, relaxed);
+$lh-loose: token.get(line-height, loose);

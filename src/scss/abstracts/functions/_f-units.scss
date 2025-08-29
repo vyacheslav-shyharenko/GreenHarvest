@@ -1,0 +1,39 @@
+@use "sass:math";
+@use "sass:meta";
+
+// Функція для видалення одиниць виміру
+@function remove-unit($value) {
+  // Якщо значення є null, просто повертаємо його
+  @if $value == null {
+    @return $value;
+  }
+
+  // Якщо значення не є числом, видаємо помилку
+  @if meta.type-of($value) != "number" {
+    @error "remove-unit(): `#{$value}` is not a number.";
+  }
+
+  // Якщо одиниця відсутня, повертаємо значення
+  @if math.is-unitless($value) {
+    @return $value;
+  }
+
+  // Якщо одиниця не px, то видаємо помилку
+  @if math.unit($value) != "px" {
+    @error "remove-unit(): `#{$value}` must use px units, not #{math.unit($value)}.";
+  }
+
+  // Видаляємо одиницю px
+  @return math.div($value, 1px);
+}
+
+// Функція для перетворення px в rem
+@function rem($px-value, $baseFontSize: 16px) {
+  // Перевіряємо, чи значення px не null перед обчисленням
+  @if $px-value == null {
+    @return null;
+  }
+
+  $ratio: math.div(remove-unit($px-value), remove-unit($baseFontSize));
+  @return $ratio * 1rem; // Повертає число з одиницею rem
+}

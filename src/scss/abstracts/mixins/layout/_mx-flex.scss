@@ -1,0 +1,78 @@
+@use 'sass:map';
+
+@use '../../functions/f-units' as u;
+
+@use '../../maps' as m;
+
+@mixin flex(
+  $justify: null,
+  $align: null,
+  $direction: null,
+  $wrap: null,
+  $gap: null,
+  $row-gap: null,
+  $column-gap: null
+) {
+  display: flex;
+
+  @if $justify != null {
+    justify-content: $justify;
+  }
+
+  @if $align != null {
+    align-items: $align;
+  }
+
+  @if $direction != null {
+    flex-direction: $direction;
+  }
+
+  @if $wrap != null {
+    flex-wrap: $wrap;
+  }
+
+  // Якщо передано один gap — застосувати до обох
+  @if $gap != null {
+    $value: map.get(m.$SPACING-GAP, $gap);
+    row-gap: $value;
+    column-gap: $value;
+  }
+
+  // Якщо задані окремо — вони мають пріоритет
+  @if $row-gap != null {
+    row-gap: map.get(m.$SPACING-GAP, $row-gap);
+  }
+
+  @if $column-gap != null {
+    column-gap: map.get(m.$SPACING-GAP, $column-gap);
+  }
+}
+
+// 🎯 Шорткати з gap-підтримкою
+@mixin flex-center($gap: null) {
+  @include flex(center, center, null, null, $gap);
+}
+
+@mixin flex-x($gap: null) {
+  @include flex(center, null, null, null, $gap);
+}
+
+@mixin flex-y($gap: null) {
+  @include flex(null, center, null, null, $gap);
+}
+
+@mixin flex-col-center($gap: null) {
+  @include flex(center, center, column, null, $gap);
+}
+
+@mixin flex-col-x($gap: null) {
+  @include flex(center, null, column, null, $gap);
+}
+
+@mixin flex-col-y($gap: null) {
+  @include flex(null, center, column, null, $gap);
+}
+
+@mixin flex-between($gap: null) {
+  @include flex(space-between, center, null, null, $gap);
+}

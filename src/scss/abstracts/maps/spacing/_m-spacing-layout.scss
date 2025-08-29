@@ -1,0 +1,7 @@
+@use "../../functions/f-units" as u;
+
+$SPACING-LAYOUT: (
+  container-max: u.rem(null),
+  container-min: u.rem(null),
+  section: u.rem(null),
+);

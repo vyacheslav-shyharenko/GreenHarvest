@@ -1,0 +1,5 @@
+@use '../../../functions/f-get-token' as token;
+
+$spacing-token-map: token.get(
+  spacing
+); // Повертає  вкладену мапу spacing з $TOKENS

@@ -1,0 +1,15 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-text-color-map: m.$TEXT-COLOR;
+
+// СSS змінні --var()
+
+// Text
+$v-text-primary: css.get(color, 'text.primary', css);
+$v-text-secondary: css.get(color, 'text.secondary', css);
+$v-text-tertiary: css.get(color, 'text.tertiary', css);
+$v-text-accent: css.get(color, 'text.accent', css);
+$v-text-hover: css.get(color, 'text.hover', css);
+$v-text-title: css.get(color, 'text.title', css);

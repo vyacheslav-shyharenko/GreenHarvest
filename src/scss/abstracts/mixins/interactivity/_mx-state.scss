@@ -1,0 +1,36 @@
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin focus {
+  &:focus {
+    @content;
+  }
+}
+
+@mixin pressed {
+  &:active {
+    @content;
+  }
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin after {
+  &::after {
+    @content;
+  }
+}

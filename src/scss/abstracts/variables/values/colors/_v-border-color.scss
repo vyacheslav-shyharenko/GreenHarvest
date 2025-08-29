@@ -1,0 +1,10 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$border-color-map: m.$BORDER-COLOR;
+
+$border-primary: token.get(color, 'border.primary');
+$border-secondary: token.get(color, 'border.secondary');
+$border-tertiary: token.get(color, 'border.tertiary');
+$border-accent: token.get(color, 'border.accent');

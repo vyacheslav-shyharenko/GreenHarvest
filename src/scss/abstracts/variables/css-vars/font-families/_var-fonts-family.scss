@@ -1,0 +1,11 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-font-family-map: m.$FONT-FAMILY;
+
+//  СSS змінні --var()
+$v-ff-primary: css.get(font-family, primary, css);
+$v-ff-secondary: css.get(font-family, secondary, css);
+$v-ff-tertiary: css.get(font-family, tertiary, css);
+$v-ff-accent: css.get(font-family, accent, css);

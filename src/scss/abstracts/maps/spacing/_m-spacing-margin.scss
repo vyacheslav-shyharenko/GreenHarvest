@@ -1,0 +1,12 @@
+@use '../../functions/f-units' as u;
+
+$SPACING-MARGIN: (
+  none: u.rem(null),
+  xxs: u.rem(null),
+  xs: u.rem(null),
+  sm: u.rem(12px),
+  md: u.rem(16px),
+  lg: u.rem(32px),
+  xl: u.rem(76px),
+  xxl: u.rem(null),
+);

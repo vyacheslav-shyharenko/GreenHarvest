@@ -1,0 +1,10 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$sp-layout-map: m.$SPACING-LAYOUT;
+
+// Spacing LAYOUT
+$layout-none: token.get(spacing, 'layout.container-max');
+$layout-xxs: token.get(spacing, 'layout.container-min');
+$layout-xs: token.get(spacing, 'layout.section');

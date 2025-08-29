@@ -1,0 +1,17 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-sp-gap-map: m.$SPACING-GAP;
+
+// СSS змінні --var()
+
+// Spacing GAP
+$v-gap-none: css.get(spacing, 'gap.none', css);
+$v-gap-xxs: css.get(spacing, 'gap.xxs', css);
+$v-gap-xs: css.get(spacing, 'gap.xs', css);
+$v-gap-sm: css.get(spacing, 'gap.sm', css);
+$v-gap-md: css.get(spacing, 'gap.md', css);
+$v-gap-lg: css.get(spacing, 'gap.lg', css);
+$v-gap-xl: css.get(spacing, 'gap.xl', css);
+$v-gap-xxl: css.get(spacing, 'gap.xxl', css);

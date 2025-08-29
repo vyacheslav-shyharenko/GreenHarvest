@@ -1,0 +1,16 @@
+@use "sass:meta";
+
+@mixin generate-css-vars($map, $prefix: "") {
+  @each $key, $value in $map {
+    $full-key: if($prefix != "", "#{$prefix}-#{$key}", $key);
+
+    // Перевірка на null, порожнє значення та значення "null"
+    @if $value != null and $value != "" and $value != "null" {
+      @if meta.type-of($value) == "map" {
+        @include generate-css-vars($value, $full-key);
+      } @else {
+        --#{$full-key}: #{$value};
+      }
+    }
+  }
+}

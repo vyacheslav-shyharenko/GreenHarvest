@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+html {
+  font-size: $v-fs-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  // @include clamp($bp-xs, $bp-desktop, $fs-base, 14px);
+
+  font-family: $v-ff-primary, sans-serif;
+  font-weight: $v-fw-regular;
+  line-height: $v-lh-base;
+  color: $v-text-primary;
+  background-color: $v-bg-primary;
+
+  & button {
+    cursor: pointer;
+  }
+
+  & svg {
+    fill: $v-icon-primary;
+
+    @include transition-fill;
+
+    &:hover {
+      fill: $v-icon-hover;
+    }
+  }
+}

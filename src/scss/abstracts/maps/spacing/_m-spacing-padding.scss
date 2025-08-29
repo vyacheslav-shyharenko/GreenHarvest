@@ -1,0 +1,12 @@
+@use '../../functions/f-units' as u;
+
+$SPACING_PADDING: (
+  none: u.rem(null),
+  xxs: u.rem(null),
+  xs: u.rem(8px),
+  sm: u.rem(10px),
+  md: u.rem(16px),
+  lg: u.rem(24px),
+  xl: u.rem(52px),
+  xxl: u.rem(96px),
+);

@@ -1,0 +1,39 @@
+@use '../maps' as m;
+
+$TOKENS: (
+  breakpoint: m.$BREAKPOINT,
+
+  color: (
+    bg: m.$BG-COLOR,
+    border: m.$BORDER-COLOR,
+    button: m.$BUTTON-COLOR,
+    icon: m.$ICON-COLOR,
+    status: m.$STATUS-COLOR,
+    text: m.$TEXT-COLOR,
+    scroll: m.$SCROLL_BAR-COLOR,
+  ),
+
+  font-family: m.$FONT-FAMILY,
+  font-size: m.$FONT-SIZE,
+  font-weight: m.$FONT-WEIGHT,
+  line-height: m.$LINE-HEIGHT,
+
+  radius: m.$RADIUS,
+
+  spacing: (
+    gap: m.$SPACING-GAP,
+    padding: m.$SPACING_PADDING,
+    margin: m.$SPACING-MARGIN,
+    layout: m.$SPACING-LAYOUT,
+  ),
+
+  transition: (
+    all: m.$TRANSITION-ALL,
+    fill: m.$TRANSITION-FILL,
+    color: m.$TRANSITION-COLOR,
+    background-color: m.$TRANSITION-BG-COLOR,
+    opacity: m.$TRANSITION-OPACITY,
+    transform: m.$TRANSITION-TRANSFORM,
+    border-trans: m.$TRANSITION-BORDER,
+  ),
+);

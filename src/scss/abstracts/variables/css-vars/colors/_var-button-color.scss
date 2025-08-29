@@ -1,0 +1,15 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-btn-color-map: m.$BUTTON-COLOR;
+
+// СSS змінні --var()
+
+// Button
+$v-btn-primary: css.get(color, 'button.primary', css);
+$v-btn-secondary: css.get(color, 'button.secondary', css);
+$v-btn-tertiary: css.get(color, 'button.tertiary', css);
+$v-btn-accent: css.get(color, 'button.accent', css);
+$v-btn-pressed: css.get(color, 'button.pressed', css);
+$v-btn-hover: css.get(color, 'button.hover', css);

@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$text-color-map: m.$TEXT-COLOR;
+
+// Звичайні SCSS-значення
+$text-primary: token.get(color, 'text.primary');
+$text-secondary: token.get(color, 'text.secondary');
+$text-tertiary: token.get(color, 'text.tertiary');
+$text-accent: token.get(color, 'text.accent');
+$text-hover: token.get(color, 'text.hover');
+$text-title: token.get(color, 'text.title');

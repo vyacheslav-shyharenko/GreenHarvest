@@ -1,0 +1,12 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$status-color-map: m.$STATUS-COLOR;
+
+// Звичайні SCSS-значення
+$status-default: token.get(color, 'status.default');
+$status-info: token.get(color, 'status.info');
+$status-success: token.get(color, 'status.success');
+$status-warning: token.get(color, 'status.warning');
+$status-danger: token.get(color, 'status.danger');

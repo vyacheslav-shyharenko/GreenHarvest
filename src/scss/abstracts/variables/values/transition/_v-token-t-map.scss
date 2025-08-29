@@ -1,0 +1,5 @@
+@use '../../../functions/f-get-token' as token;
+
+$transition-token-map: token.get(
+  transition
+); // Повертає  вкладену мапу transition з $TOKENS

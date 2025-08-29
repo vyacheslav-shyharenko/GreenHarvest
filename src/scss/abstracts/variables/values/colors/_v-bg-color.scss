@@ -1,0 +1,14 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$bgr-color-map: m.$BG-COLOR;
+
+// Звичайні SCSS-значення
+$bg-primary: token.get(color, 'bg.primary');
+$bg-secondary: token.get(color, 'bg.secondary');
+$bg-tertiary: token.get(color, 'bg.tertiary');
+$bg-frame: token.get(color, 'bg.frame');
+$bg-hover: token.get(color, 'bg.hover');
+$bg-accent: token.get(color, 'bg.accent');
+$bg-overlay: token.get(color, 'bg.overlay');

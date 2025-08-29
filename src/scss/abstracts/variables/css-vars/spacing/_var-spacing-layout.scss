@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-sp-layout-map: m.$SPACING-LAYOUT;
+
+// СSS змінні --var()
+
+// Spacing LAYOUT
+
+$v-layout-none: css.get(spacing, 'layout.container-max', css);
+$v-layout-xxs: css.get(spacing, 'layout.container-min', css);
+$v-layout-xs: css.get(spacing, 'layout.section', css);

@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-border-color-map: m.$BORDER-COLOR;
+
+// СSS змінні --var()
+
+// Border
+$v-border-primary: css.get(color, 'border.primary', css);
+$v-border-secondary: css.get(color, 'border.secondary', css);
+$v-border-tertiary: css.get(color, 'border.tertiary', css);
+$v-border-accent: css.get(color, 'border.accent', css);

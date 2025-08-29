@@ -1,0 +1,9 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$transition-opacity-map: m.$TRANSITION-OPACITY;
+
+$propertyOpacity: token.get(transition, 'opacity.property');
+$durationOpacity: token.get(transition, 'opacity.duration');
+$timing-functionOpacity: token.get(transition, 'opacity.timing-function');

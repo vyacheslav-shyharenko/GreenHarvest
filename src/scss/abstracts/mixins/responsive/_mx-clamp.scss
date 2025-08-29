@@ -1,0 +1,38 @@
+@use "sass:math";
+
+@mixin clamp($min-w, $max-w, $fs-start, $fs-end) {
+  // Перетворюємо всі в unitless px
+  $min-w-val: math.div($min-w, 1px);
+  $max-w-val: math.div($max-w, 1px);
+
+  // $fs-start, $fs-end можуть бути в rem або px
+  $fs-start-val: if(
+    math.unit($fs-start) == "rem",
+    math.div($fs-start, 1rem) * 16,
+    math.div($fs-start, 1px)
+  );
+
+  $fs-end-val: if(
+    math.unit($fs-end) == "rem",
+    math.div($fs-end, 1rem) * 16,
+    math.div($fs-end, 1px)
+  );
+
+  // Обчислюємо vw-коефіцієнт
+  $range: $max-w-val - $min-w-val;
+  $slope: $fs-end-val - $fs-start-val;
+  $sign: if($slope >= 0, "+", "-");
+  $abs-slope: math.abs($slope);
+  $vw-factor: math.div($abs-slope, $range) * 100;
+
+  // Переводимо unitless → rem
+  $fs-start-rem: math.div($fs-start-val, 16) * 1rem;
+  $fs-end-rem: math.div($fs-end-val, 16) * 1rem;
+
+  $preferred: calc(#{$fs-start-rem} #{$sign} #{$vw-factor}vw);
+
+  $min-fs: if($fs-start-val < $fs-end-val, $fs-start-rem, $fs-end-rem);
+  $max-fs: if($fs-start-val > $fs-end-val, $fs-start-rem, $fs-end-rem);
+
+  font-size: clamp(#{$min-fs}, #{$preferred}, #{$max-fs});
+}

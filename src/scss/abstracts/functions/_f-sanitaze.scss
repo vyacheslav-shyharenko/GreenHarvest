@@ -1,0 +1,14 @@
+@use "sass:string";
+@use "sass:list";
+
+@function sanitize-key($key) {
+  $parts: string.split($key, ".");
+  $sanitized: "";
+
+  @for $i from 1 through list.length($parts) {
+    $part: list.nth($parts, $i);
+    $sanitized: if($i == 1, $part, $sanitized + "-" + $part);
+  }
+
+  @return $sanitized;
+}

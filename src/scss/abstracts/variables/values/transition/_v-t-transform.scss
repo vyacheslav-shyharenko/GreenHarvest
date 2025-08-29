@@ -1,0 +1,9 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$transition-transform-map: m.$TRANSITION-TRANSFORM;
+
+$propertyTransform: token.get(transition, 'transform.property');
+$durationTransform: token.get(transition, 'transform.duration');
+$timing-functionTransform: token.get(transition, 'transform.timing-function');

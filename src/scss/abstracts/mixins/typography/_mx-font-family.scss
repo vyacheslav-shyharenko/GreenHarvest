@@ -1,0 +1,19 @@
+@use '../../tokens/t-tokens' as t;
+
+@use '../../functions/f-get-token' as fn;
+
+$map: fn.get(font-weight);
+
+// Fonts
+@mixin font-face-family($name, $map, $style: normal) {
+  @each $label, $weight in $map {
+    @font-face {
+      font-family: #{$name};
+      src: url('/fonts/#{$name}-#{$label}.woff2') format('woff2'),
+        url('/fonts/#{$name}-#{$label}.woff') format('woff');
+      font-weight: $weight;
+      font-style: $style;
+      font-display: swap;
+    }
+  }
+}

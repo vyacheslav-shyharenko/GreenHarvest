@@ -1,0 +1,16 @@
+@use '../../variables/css-vars' as v;
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  padding: v.$v-padding-xs v.$v-padding-lg;
+
+  background-color: v.$v-btn-primary;
+  color: inherit;
+
+  border-radius: v.$v-r-sm;
+
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  font-weight: v.$v-fw-bold;
+}

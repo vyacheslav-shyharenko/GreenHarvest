@@ -1,0 +1,49 @@
+@use '../../functions/f-get-token' as fn;
+
+@mixin border($width, $color-key: primary, $style: solid) {
+  // Отримуємо мапу кольорів для border
+  $color-map: fn.get(color, 'border');
+
+  // Отримуємо конкретний колір із мапи за ключем
+  $color: fn.get(color, 'border.#{$color-key}');
+
+  // Якщо колір не знайдений або пустий, замінюємо на default
+  @if $color == null {
+    $color: #fe0303;
+    @warn "Color `#{$color-key}` is invalid or not found. Using default color (#000000).";
+  }
+
+  // Якщо ширина == none, встановлюємо border: none
+
+  @if $width == none {
+    border: none;
+  } @else if $width == transparent {
+    border: transparent;
+  } @else {
+    border: $width $style $color;
+  }
+}
+
+@mixin outline($width, $color-key: primary, $style: solid) {
+  // Отримуємо мапу кольорів для border
+  $color-map: fn.get(color, 'border');
+
+  // Отримуємо конкретний колір із мапи за ключем
+  $color: fn.get(color, 'border.#{$color-key}');
+
+  // Якщо колір не знайдений або пустий, замінюємо на default
+  @if $color == null {
+    $color: #fe0303;
+    @warn "Color `#{$color-key}` is invalid or not found. Using default color (#000000).";
+  }
+
+  // Якщо ширина == none, встановлюємо border: none
+
+  @if $width == none {
+    outline: none;
+  } @else if $width == transparent {
+    outline: transparent;
+  } @else {
+    outline: $width $style $color;
+  }
+}

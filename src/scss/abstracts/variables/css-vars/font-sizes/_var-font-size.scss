@@ -1,0 +1,14 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-font-size-map: m.$FONT-SIZE;
+
+// СSS змінні --var()
+
+$v-fs-xs: css.get(font-size, xs, css);
+$v-fs-sm: css.get(font-size, sm, css);
+$v-fs-base: css.get(font-size, base, css);
+$v-fs-md: css.get(font-size, md, css);
+$v-fs-lg: css.get(font-size, lg, css);
+$v-fs-xl: css.get(font-size, xl, css);

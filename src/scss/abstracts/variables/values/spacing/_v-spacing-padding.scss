@@ -1,0 +1,15 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$sp-padding-map: m.$SPACING_PADDING;
+
+// Spacing PADDING
+$padding-none: token.get(spacing, 'padding.none');
+$padding-xxs: token.get(spacing, 'padding.xxs');
+$padding-xs: token.get(spacing, 'padding.xs');
+$padding-sm: token.get(spacing, 'padding.sm');
+$padding-md: token.get(spacing, 'padding.md');
+$padding-lg: token.get(spacing, 'padding.lg');
+$padding-xl: token.get(spacing, 'padding.xl');
+$padding-xxl: token.get(spacing, 'padding.xxl');

@@ -1,0 +1,15 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$sp-margin-map: m.$SPACING-MARGIN;
+
+// Spacing MARGIN
+$margin-none: token.get(spacing, 'margin.none');
+$margin-xxs: token.get(spacing, 'margin.xxs');
+$margin-xs: token.get(spacing, 'margin.xs');
+$margin-sm: token.get(spacing, 'margin.sm');
+$margin-md: token.get(spacing, 'margin.md');
+$margin-lg: token.get(spacing, 'margin.lg');
+$margin-xl: token.get(spacing, 'margin.xl');
+$margin-xxl: token.get(spacing, 'margin.xxl');

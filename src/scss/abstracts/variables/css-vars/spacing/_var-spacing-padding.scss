@@ -1,0 +1,21 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-sp-padding-map: m.$SPACING_PADDING;
+
+// СSS змінні --var()
+
+// Spacing PADDING
+$v-padding-none: css.get(spacing, 'padding.none', css);
+$v-padding-xxs: css.get(spacing, 'padding.xxs', css);
+$v-padding-xs: css.get(spacing, 'padding.xs', css);
+$v-padding-sm: css.get(spacing, 'padding.sm', css);
+$v-padding-md: css.get(spacing, 'padding.md', css);
+$v-padding-lg: css.get(spacing, 'padding.lg', css);
+$v-padding-xl: css.get(spacing, 'padding.xl', css);
+$v-padding-xxl: css.get(spacing, 'padding.xxl', css);
+
+// $v-section: css.get(spacing, "gap." section, css);
+// $v-container-min: css.get(spacing, "gap." container-min, css);
+// $v-container-max: css.get(spacing, "gap." container-max, css);

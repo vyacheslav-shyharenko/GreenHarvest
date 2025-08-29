@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$btn-color-map: m.$BUTTON-COLOR;
+
+// Звичайні SCSS-значення
+$btn-primary: token.get(color, 'button.primary');
+$btn-secondary: token.get(color, 'button.secondary');
+$btn-tertiary: token.get(color, 'button.tertiary');
+$btn-accent: token.get(color, 'button.accent');
+$btn-pressed: token.get(color, 'button.pressed');
+$btn-hover: token.get(color, 'button.hover');

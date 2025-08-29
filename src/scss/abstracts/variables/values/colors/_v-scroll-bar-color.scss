@@ -1,0 +1,11 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$scroll-color-map: m.$SCROLL_BAR-COLOR;
+
+// Звичайні SCSS-значення
+$scroll-primary: token.get(color, 'scroll.primary');
+$scroll-secondary: token.get(color, 'scroll.secondary');
+$scroll-tertiary: token.get(color, 'scroll.tertiary');
+$scroll-accent: token.get(color, 'scroll.accent');

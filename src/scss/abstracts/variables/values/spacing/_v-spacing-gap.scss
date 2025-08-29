@@ -1,0 +1,15 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$sp-gap-map: m.$SPACING-GAP;
+
+// Spacing GAP
+$gap-none: token.get(spacing, 'gap.none');
+$gap-xxs: token.get(spacing, 'gap.xxs');
+$gap-xs: token.get(spacing, 'gap.xs');
+$gap-sm: token.get(spacing, 'gap.sm');
+$gap-md: token.get(spacing, 'gap.md');
+$gap-lg: token.get(spacing, 'gap.lg');
+$gap-xl: token.get(spacing, 'gap.xl');
+$gap-xxl: token.get(spacing, 'gap.xxl');

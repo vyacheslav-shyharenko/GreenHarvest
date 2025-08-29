@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$breakpoint-map: m.$BREAKPOINT;
+
+// Звичайні SCSS-значення
+
+$bp-xs: token.get(breakpoint, xs);
+$bp-mobile: token.get(breakpoint, mobile);
+$bp-tablet: token.get(breakpoint, tablet);
+$bp-desktop: token.get(breakpoint, desktop);
+$bp-xl: token.get(breakpoint, xl);

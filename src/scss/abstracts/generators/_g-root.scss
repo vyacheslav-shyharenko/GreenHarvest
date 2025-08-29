@@ -1,0 +1,54 @@
+@use '../functions/f-units' as r;
+@use '../mixins/utils/mx-generate-vars' as mx;
+@use '../variables' as v;
+@use '../maps' as m;
+
+:root {
+  // === BREAKPOINTS ===
+  @each $key, $value in m.$BREAKPOINT {
+    @if $value != null and $value != '' {
+      --breakpoint-#{$key}: #{$value};
+    }
+  }
+
+  // === FONT FAMILY ===
+  @each $key, $value in m.$FONT-FAMILY {
+    @if $value != null {
+      --font-family-#{$key}: #{$value};
+    }
+  }
+
+  // === FONT SIZES ===
+  @each $key, $value in m.$FONT-SIZE {
+    @if $value != null {
+      --font-size-#{$key}: #{$value};
+    }
+  }
+
+  // === FONT WEIGHTS ===
+  @each $key, $value in m.$FONT-WEIGHT {
+    @if $value != null {
+      --font-weight-#{$key}: #{$value};
+    }
+  }
+
+  // === LINE HEIGHTS ===
+  @each $key, $value in m.$LINE-HEIGHT {
+    @if $value != null {
+      --line-height-#{$key}: #{$value};
+    }
+  }
+
+  // === SPACING ===
+  @include mx.generate-css-vars(v.$spacing-token-map, 'spacing');
+
+  // === RADIUS ===
+  @each $key, $value in m.$RADIUS {
+    @if $value != null {
+      --radius-#{$key}: #{$value};
+    }
+  }
+
+  // === COLORS ===
+  @include mx.generate-css-vars(v.$color-token-map, 'color');
+}

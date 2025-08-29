@@ -1,0 +1,11 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$font-family-map: m.$FONT-FAMILY;
+
+// Звичайні SCSS-значення
+$ff-primary: token.get(font-family, primary);
+$ff-secondary: token.get(font-family, secondary);
+$ff-tertiary: token.get(font-family, tertiary);
+$ff-accent: token.get(font-family, accent);

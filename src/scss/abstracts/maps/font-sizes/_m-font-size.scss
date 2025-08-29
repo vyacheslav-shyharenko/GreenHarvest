@@ -1,0 +1,10 @@
+@use '../../functions/f-units' as u;
+
+$FONT-SIZE: (
+  xs: u.rem(12px),
+  sm: u.rem(14px),
+  base: u.rem(16px),
+  md: u.rem(18px),
+  lg: u.rem(20px),
+  xl: u.rem(36px),
+);

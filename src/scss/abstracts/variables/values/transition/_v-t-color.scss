@@ -1,0 +1,9 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$transition-color-map: m.$TRANSITION-COLOR;
+
+$propertyColor: token.get(transition, 'color.property');
+$durationColor: token.get(transition, 'color.duration');
+$timing-functionColor: token.get(transition, 'color.timing-function');

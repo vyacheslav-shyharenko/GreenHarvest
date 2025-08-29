@@ -1,0 +1,9 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$transition-all-map: m.$TRANSITION-ALL;
+
+$propertyAll: token.get(transition, 'all.property');
+$durationAll: token.get(transition, 'all.duration');
+$timing-functionAll: token.get(transition, 'all.timing-function');

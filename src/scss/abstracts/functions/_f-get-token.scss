@@ -1,0 +1,35 @@
+@use "sass:string";
+@use "sass:map";
+@use "sass:meta";
+@use "../tokens/t-tokens" as t;
+
+@use "./f-sanitaze" as fn;
+
+@function get($group, $key: null, $as: scss) {
+  @if not map.has-key(t.$TOKENS, $group) {
+    @error "❌ Group `#{$group}` not found in TOKENS.";
+  }
+
+  $group-map: map.get(t.$TOKENS, $group);
+
+  @if $key == null {
+    @return $group-map;
+  }
+
+  $parts: string.split($key, ".");
+  $value: $group-map;
+
+  @each $part in $parts {
+    @if not map.has-key($value, $part) {
+      @error "❌ Key `#{$part}` not found in group `#{$group}`.";
+    }
+    $value: map.get($value, $part);
+  }
+
+  @if $as == css {
+    $css-key: fn.sanitize-key($key);
+    @return string.unquote("var(--#{$group}-#{$css-key})");
+  }
+
+  @return $value;
+}

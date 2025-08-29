@@ -1,0 +1,3 @@
+@use "../abstracts" as v;
+
+@include v.font-face-family(v.$ff-primary, v.$font-weight-map);

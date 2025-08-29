@@ -1,0 +1,17 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-sp-margin-map: m.$SPACING-MARGIN;
+
+// СSS змінні --var()
+
+// Spacing MARGIN
+$v-margin-none: css.get(spacing, 'margin.none', css);
+$v-margin-xxs: css.get(spacing, 'margin.xxs', css);
+$v-margin-xs: css.get(spacing, 'margin.xs', css);
+$v-margin-sm: css.get(spacing, 'margin.sm', css);
+$v-margin-md: css.get(spacing, 'margin.md', css);
+$v-margin-lg: css.get(spacing, 'margin.lg', css);
+$v-margin-xl: css.get(spacing, 'margin.xl', css);
+$v-margin-xxl: css.get(spacing, 'margin.xxl', css);

@@ -1,0 +1,9 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$transition-border-map: m.$TRANSITION-BORDER;
+
+$propertyBorder: token.get(transition, 'border-trans.property');
+$durationBorder: token.get(transition, 'border-trans.duration');
+$timing-functionBorder: token.get(transition, 'border-trans.timing-function');

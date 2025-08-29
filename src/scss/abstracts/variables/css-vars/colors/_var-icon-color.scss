@@ -1,0 +1,14 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-icon-color-map: m.$ICON-COLOR;
+
+// Icon
+$v-icon-primary: css.get(color, 'icon.primary', css);
+$v-icon-secondary: css.get(color, 'icon.secondary', css);
+$v-icon-tertiary: css.get(color, 'icon.tertiary', css);
+$v-icon-accent: css.get(color, 'icon.accent', css);
+$v-icon-hover: css.get(color, 'icon.hover', css);
+$v-icon-success: css.get(color, 'icon.success', css);
+$v-icon-error: css.get(color, 'icon.error', css);

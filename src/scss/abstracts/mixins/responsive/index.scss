@@ -1,0 +1,3 @@
+@forward "./mx-clamp"; // Міксин для генерації адаптивного font-size через clamp() на базі min/max ширини.
+
+@forward "./mx-media"; // Міксин для медіа-запитів з підтримкою min/max ширини та retina-дисплеїв.

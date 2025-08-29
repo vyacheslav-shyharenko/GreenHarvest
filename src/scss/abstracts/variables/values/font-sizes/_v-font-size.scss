@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$font-size-map: m.$FONT-SIZE;
+
+// Звичайні SCSS-значення
+$fs-xs: token.get(font-size, xs);
+$fs-sm: token.get(font-size, sm);
+$fs-base: token.get(font-size, base);
+$fs-md: token.get(font-size, md);
+$fs-lg: token.get(font-size, lg);
+$fs-xl: token.get(font-size, xl);

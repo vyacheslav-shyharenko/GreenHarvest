@@ -1,0 +1,14 @@
+@use '../../../functions/f-get-token' as token;
+
+@use '../../../maps' as m;
+
+$icon-color-map: m.$ICON-COLOR;
+
+// Звичайні SCSS-значення
+$icon-primary: token.get(color, 'icon.primary');
+$icon-secondary: token.get(color, 'icon.secondary');
+$icon-tertiary: token.get(color, 'icon.tertiary');
+$icon-accent: token.get(color, 'icon.accent');
+$icon-hover: token.get(color, 'icon.hover');
+$icon-success: token.get(color, 'icon.success');
+$icon-error: token.get(color, 'icon.error');

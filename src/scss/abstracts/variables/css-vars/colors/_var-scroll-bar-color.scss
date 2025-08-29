@@ -1,0 +1,13 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-scroll-color-map: m.$SCROLL_BAR-COLOR;
+
+// СSS змінні --var()
+
+// Scroll-bar
+$v-scroll-primary: css.get(color, 'scroll.primary', css);
+$v-scroll-secondary: css.get(color, 'scroll.secondary', css);
+$v-scroll-tertiary: css.get(color, 'scroll.tertiary', css);
+$v-scroll-accent: css.get(color, 'scroll.accent', css);

@@ -1,0 +1,14 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+
+$v-bgr-color-map: m.$BG-COLOR;
+
+// Backround
+$v-bg-primary: css.get(color, 'bg.primary', css);
+$v-bg-secondary: css.get(color, 'bg.secondary', css);
+$v-bg-tertiary: css.get(color, 'bg.tertiary', css);
+$v-bg-frame: css.get(color, 'bg.frame', css);
+$v-bg-hover: css.get(color, 'bg.hover', css);
+$v-bg-accent: css.get(color, 'bg.accent', css);
+$v-bg-overlay: css.get(color, 'bg.overlay', css);

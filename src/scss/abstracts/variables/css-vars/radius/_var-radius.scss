@@ -1,0 +1,10 @@
+@use '../../../functions/f-get-token' as css;
+
+@use '../../../maps' as m;
+// СSS змінні --var()
+
+$v-radius-map: m.$RADIUS;
+
+$v-r-sm: css.get(radius, sm, css);
+$v-r-md: css.get(radius, md, css);
+$v-r-lg: css.get(radius, lg, css);
